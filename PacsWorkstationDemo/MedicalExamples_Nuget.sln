@@ -1,0 +1,57 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicalMainMenu_4_Nuget", "CS\MedicalMainMenu\MedicalMainMenu_4_Nuget.csproj", "{64D5AF11-D7BB-44B2-9E62-37CEDF925D62}"
+	ProjectSection(ProjectDependencies) = postProject
+		{674AF410-7BB2-427D-A177-CA7CBA559A78} = {674AF410-7BB2-427D-A177-CA7CBA559A78}
+		{B0C14719-4762-4525-9720-86562FFAFCF6} = {B0C14719-4762-4525-9720-86562FFAFCF6}
+		{0D0D3F41-6F04-40BD-8734-D3E3CE850D28} = {0D0D3F41-6F04-40BD-8734-D3E3CE850D28}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacsConfigDemo_4_Nuget", "CS\PACSConfigDemo\PacsConfigDemo_4_Nuget.csproj", "{0D0D3F41-6F04-40BD-8734-D3E3CE850D28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacsDatabaseConfigurationDemo_4_Nuget", "CS\PACSDatabaseConfigurationDemo\PacsDatabaseConfigurationDemo_4_Nuget.csproj", "{674AF410-7BB2-427D-A177-CA7CBA559A78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicalWorkstationMainDemo_4_Nuget", "CS\MedicalWorkstationMainDemo\MedicalWorkstationMainDemo_4_Nuget.csproj", "{B0C14719-4762-4525-9720-86562FFAFCF6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration Demos", "Configuration Demos", "{06A00379-5895-4768-9075-8908B8F621F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DICOM Viewer Demos", "DICOM Viewer Demos", "{A5361469-EEDC-40EA-A204-2B4F4804730F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64D5AF11-D7BB-44B2-9E62-37CEDF925D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64D5AF11-D7BB-44B2-9E62-37CEDF925D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64D5AF11-D7BB-44B2-9E62-37CEDF925D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64D5AF11-D7BB-44B2-9E62-37CEDF925D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D0D3F41-6F04-40BD-8734-D3E3CE850D28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D0D3F41-6F04-40BD-8734-D3E3CE850D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D0D3F41-6F04-40BD-8734-D3E3CE850D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D0D3F41-6F04-40BD-8734-D3E3CE850D28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{674AF410-7BB2-427D-A177-CA7CBA559A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{674AF410-7BB2-427D-A177-CA7CBA559A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{674AF410-7BB2-427D-A177-CA7CBA559A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{674AF410-7BB2-427D-A177-CA7CBA559A78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0C14719-4762-4525-9720-86562FFAFCF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0C14719-4762-4525-9720-86562FFAFCF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0C14719-4762-4525-9720-86562FFAFCF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0C14719-4762-4525-9720-86562FFAFCF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0D0D3F41-6F04-40BD-8734-D3E3CE850D28} = {06A00379-5895-4768-9075-8908B8F621F0}
+		{674AF410-7BB2-427D-A177-CA7CBA559A78} = {06A00379-5895-4768-9075-8908B8F621F0}
+		{B0C14719-4762-4525-9720-86562FFAFCF6} = {A5361469-EEDC-40EA-A204-2B4F4804730F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.SqlCe.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45
+		SolutionGuid = {6C935D88-2B1E-4603-8D27-32E4F7C727A4}
+	EndGlobalSection
+EndGlobal

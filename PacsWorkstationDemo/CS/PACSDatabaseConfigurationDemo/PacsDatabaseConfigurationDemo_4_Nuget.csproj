@@ -1,0 +1,654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch)' == ''">
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{674AF410-7BB2-427D-A177-CA7CBA559A78}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSPacsDatabaseConfigurationDemo</RootNamespace>
+    <AssemblyName>CSPacsDatabaseConfigurationDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>Resources\MedAddon.ico</ApplicationIcon>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <LeadConfigPath>..\..\Bin\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <NoWarn>1685</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <LeadConfigPath>..\..\Bin\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <NoWarn>1685</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <LeadConfigPath>..\..\Bin\x86\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>1685</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <LeadConfigPath>..\..\Bin\x86\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>1685</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <LeadConfigPath>..\..\Bin\x64\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x64</PlatformTarget>
+    <NoWarn>1685</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <LeadConfigPath>..\..\Bin\x64\Release\</LeadConfigPath>
+    <OutputPath>$(LeadConfigPath)</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x64</PlatformTarget>
+    <NoWarn>1685</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonServiceLocator, Version=2.0.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CommonServiceLocator.2.0.4\lib\net45\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data.SqlCe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EnterpriseLibrary.Data.SqlCe.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SharePoint.Client.15.0.0\lib\Microsoft.SharePoint.Client\Microsoft.SharePoint.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SharePoint.Client.Runtime.15.0.0\lib\Microsoft.SharePoint.Client.Runtime\Microsoft.SharePoint.Client.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo" />
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc" />
+    <Reference Include="Microsoft.SqlServer.Smo" />
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.SqlServer.Compact.4.0.8876.1\lib\net40\System.Data.SqlServerCe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Cors.5.2.7\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CS\Sql\SqlUtilities.cs">
+    </Compile>
+    <Compile Include="..\..\Common\UnlockSupport.cs">
+      <Link>Common\UnlockSupport.cs</Link>
+    </Compile>
+    <Compile Include="Database\SqlCe\DicomStorageServerDbInstaller.cs" />
+    <Compile Include="Database\SqlCe\DicomStorageServerOptionsDbInstaller.cs" />
+    <Compile Include="Database\SqlCe\MediaCreationDbInstaller.cs" />
+    <Compile Include="Database\SqlCe\DicomLoggingtDbInstaller.cs" />
+    <Compile Include="Database\SqlCe\DicomStorageDbInstaller.cs" />
+    <Compile Include="Database\SqlCe\MedicalWorkstationServerDbInstaller.cs" />
+    <Compile Include="Database\SqlCe\WorklistDbInstaller.cs" />
+    <Compile Include="Database\SqlCe\WorkstationDbInstaller.cs" />
+    <Compile Include="Database\SqlCe\WorkstationUsersManagementDbInstaller.cs" />
+    <Compile Include="Database\SqlServer\DicomStorageServerDbInstaller.cs" />
+    <Compile Include="Database\SqlServer\DicomStorageServerOptionsDbInstaller.cs" />
+    <Compile Include="Database\SqlServer\MediaCreationSqlInstaller.cs" />
+    <Compile Include="Database\SqlServer\MedicalWorkstationServerDbInstaller.cs" />
+    <Compile Include="Database\SqlServer\VersionDbInstaller.cs" />
+    <Compile Include="Database\SqlServer\WorkstationUsersManagementDbInstaller.cs" />
+    <Compile Include="Database\SqlServer\WorkstationDbInstaller.cs" />
+    <Compile Include="Database\SqlServer\DicomLoggingtDbInstaller.cs" />
+    <Compile Include="Database\SqlServer\WorklistDbInstaller.cs" />
+    <Compile Include="Database\SqlServer\DicomStorageDbInstaller.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ConnectionSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConnectionSummary.Designer.cs">
+      <DependentUpon>ConnectionSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EnumenratingSQLServersDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EnumenratingSQLServersDialog.Designer.cs">
+      <DependentUpon>EnumenratingSQLServersDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\New\ChooseDefaultSqlServerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\New\ChooseDefaultSqlServerDialog.Designer.cs">
+      <DependentUpon>ChooseDefaultSqlServerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\New\ConnectionConfigurationDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\New\ConnectionConfigurationDlg.Designer.cs">
+      <DependentUpon>ConnectionConfigurationDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\New\ConnectionSummaryDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\New\ConnectionSummaryDlg.Designer.cs">
+      <DependentUpon>ConnectionSummaryDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\New\MainForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\New\MainForm2.Designer.cs">
+      <DependentUpon>MainForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\New\MainOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\New\MainOptions.Designer.cs">
+      <DependentUpon>MainOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\New\NotRecommendedWarning.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\New\NotRecommendedWarning.Designer.cs">
+      <DependentUpon>NotRecommendedWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\ConfigurationData.cs" />
+    <Compile Include="Utils\DisplayDatabaseConfigurationCommand.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Program_leadtools.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CS\AssemblyVersion.cs">
+    </Compile>
+    <Compile Include="UI\ConnectionConfiguration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConnectionConfiguration.designer.cs">
+      <DependentUpon>ConnectionConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DatabaseOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DatabaseOptions.Designer.cs">
+      <DependentUpon>DatabaseOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataSourcesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataSourcesDialog.designer.cs">
+      <DependentUpon>DataSourcesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SqlCeConfiguration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SqlCeConfiguration.designer.cs">
+      <DependentUpon>SqlCeConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SqlServerConfiguration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SqlServerConfiguration.designer.cs">
+      <DependentUpon>SqlServerConfiguration.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\ConnectionConfiguration.resx">
+      <DependentUpon>ConnectionConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConnectionSummary.resx">
+      <DependentUpon>ConnectionSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DatabaseOptions.resx">
+      <DependentUpon>DatabaseOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataSourcesDialog.resx">
+      <DependentUpon>DataSourcesDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SqlCeConfiguration.resx">
+      <DependentUpon>SqlCeConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SqlServerConfiguration.resx">
+      <DependentUpon>SqlServerConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\MWLDatasetDummyTestData.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Database\SqlCe\StorageServer.sdf">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\SqlCe\StorageServerOptions.sdf">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\SqlCe\Logging.sdf">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\SqlCe\Storage.sdf">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\SqlCe\UserAccess.sdf">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\SqlCe\Worklist.sdf">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\SqlCe\Workstation.sdf">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\SqlCe\MedicalWorkstation.sdf">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EnumenratingSQLServersDialog.resx">
+      <DependentUpon>EnumenratingSQLServersDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EmbeddedResource Include="Resources\mg1.dcm" />
+    <EmbeddedResource Include="Resources\mg2.dcm" />
+    <EmbeddedResource Include="Resources\mg3.dcm" />
+    <EmbeddedResource Include="Resources\mg4.dcm" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\InvalidKey.ico">
+      <Link>Resources\InvalidKey.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Start.ico">
+      <Link>Resources\Start.ico</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FMX18\de01.dcm" />
+    <EmbeddedResource Include="Resources\FMX18\de02.dcm" />
+    <EmbeddedResource Include="Resources\FMX18\de03.dcm" />
+    <EmbeddedResource Include="Resources\FMX18\de04.dcm" />
+    <EmbeddedResource Include="Resources\FMX18\de05.dcm" />
+    <EmbeddedResource Include="Resources\FMX18\de06.dcm" />
+    <EmbeddedResource Include="Resources\FMX18\de07.dcm" />
+    <EmbeddedResource Include="Resources\FMX18\de08.dcm" />
+    <EmbeddedResource Include="Resources\FMX18\de09.dcm" />
+    <EmbeddedResource Include="Resources\FMX18\de10.dcm" />
+    <EmbeddedResource Include="Resources\FMX18\de11.dcm" />
+    <EmbeddedResource Include="Resources\FMX18\de12.dcm" />
+    <EmbeddedResource Include="Resources\FMX18\de13.dcm" />
+    <EmbeddedResource Include="Resources\FMX18\de14.dcm" />
+    <EmbeddedResource Include="Resources\FMX18\de15.dcm" />
+    <EmbeddedResource Include="Resources\FMX18\de16.dcm" />
+    <EmbeddedResource Include="Resources\FMX18\de17.dcm" />
+    <EmbeddedResource Include="Resources\FMX18\de18.dcm" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\MRI\mri_01.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_02.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_03.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_04.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_05.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_06.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_07.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_08.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_09.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_10.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_11.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_12.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_13.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_14.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_15.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_16.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_17.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_18.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_19.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_20.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_21.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_22.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_23.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_24.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_25.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_26.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_27.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_28.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_29.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_30.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_31.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_32.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_33.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_34.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_35.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_36.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_37.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_38.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_39.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_40.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_41.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_42.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_43.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_44.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_45.dcm" />
+    <EmbeddedResource Include="Resources\MRI\mri_46.dcm" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\1.dcm" />
+    <EmbeddedResource Include="Resources\2.dcm" />
+    <EmbeddedResource Include="Resources\warning.png" />
+    <EmbeddedResource Include="Resources\cr1.dcm" />
+    <EmbeddedResource Include="Resources\cr2.dcm" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\BusinessCard.Names.en.dic" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\BusinessCard.Titles.en.dic" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.Cmc7.bin" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.de.bin" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.de.dic" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.en.bin" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.en.bin2" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.en.dic" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.es.bin" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.es.dic" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.Field.bin" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.fr.bin" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.fr.dic" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.it.bin" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.it.dic" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.Micr.bin" />
+    <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.Mrz.bin" />
+    <None Include="packages.PacsDatabaseConfigurationDemo_4_Nuget.config" />
+    <None Include="Resources\GlobalPacs.config" />
+    <None Include="Resources\MedAddon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Database\SqlCe\MediaCreation.sdf">
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\New\ChooseDefaultSqlServerDialog.resx">
+      <DependentUpon>ChooseDefaultSqlServerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\New\ConnectionConfigurationDlg.resx">
+      <DependentUpon>ConnectionConfigurationDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\New\ConnectionSummaryDlg.resx">
+      <DependentUpon>ConnectionSummaryDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\New\MainForm2.resx">
+      <DependentUpon>MainForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\New\MainOptions.resx">
+      <DependentUpon>MainOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\New\NotRecommendedWarning.resx">
+      <DependentUpon>NotRecommendedWarning.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LEADTOOLS\OcrLEADRuntime\US_Cities.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    if not exist "$(TargetDir)x86" md "$(TargetDir)x86"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\x86\*.*" "$(TargetDir)x86"
+    if not exist "$(TargetDir)amd64" md "$(TargetDir)amd64"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\amd64\*.*" "$(TargetDir)amd64"</PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="..\..\packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets" Condition="Exists('..\..\packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Dicom.Pacs.Scp.20.0.0.6\build\net40\Leadtools.Dicom.Pacs.Scp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Dicom.Pacs.Scp.20.0.0.6\build\net40\Leadtools.Dicom.Pacs.Scp.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.MedicalCollection.Workstation.20.0.0.6\build\net40\Leadtools.MedicalCollection.Workstation.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.MedicalCollection.Workstation.20.0.0.6\build\net40\Leadtools.MedicalCollection.Workstation.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Pacs.DataAccessLayers.20.0.0.6\build\net40\Leadtools.Pacs.DataAccessLayers.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Pacs.DataAccessLayers.20.0.0.6\build\net40\Leadtools.Pacs.DataAccessLayers.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Medical.WinForms.20.0.0.6\build\net40\Leadtools.Medical.WinForms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Medical.WinForms.20.0.0.6\build\net40\Leadtools.Medical.WinForms.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Pacs.EndUser.Addins.20.0.0.6\build\net40\Leadtools.Pacs.EndUser.Addins.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Pacs.EndUser.Addins.20.0.0.6\build\net40\Leadtools.Pacs.EndUser.Addins.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets'))" />
+  </Target>
+  <Import Project="..\..\packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets" Condition="Exists('..\..\packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets')" />
+  <Import Project="..\..\packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets" Condition="Exists('..\..\packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets')" />
+  <Import Project="..\..\packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets" Condition="Exists('..\..\packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets')" />
+  <Import Project="..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets" Condition="Exists('..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets')" />
+  <Import Project="..\..\packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets" Condition="Exists('..\..\packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets')" />
+  <Import Project="..\..\packages\Leadtools.Dicom.Pacs.Scp.20.0.0.6\build\net40\Leadtools.Dicom.Pacs.Scp.targets" Condition="Exists('..\..\packages\Leadtools.Dicom.Pacs.Scp.20.0.0.6\build\net40\Leadtools.Dicom.Pacs.Scp.targets')" />
+  <Import Project="..\..\packages\Leadtools.MedicalCollection.Workstation.20.0.0.6\build\net40\Leadtools.MedicalCollection.Workstation.targets" Condition="Exists('..\..\packages\Leadtools.MedicalCollection.Workstation.20.0.0.6\build\net40\Leadtools.MedicalCollection.Workstation.targets')" />
+  <Import Project="..\..\packages\Leadtools.Pacs.DataAccessLayers.20.0.0.6\build\net40\Leadtools.Pacs.DataAccessLayers.targets" Condition="Exists('..\..\packages\Leadtools.Pacs.DataAccessLayers.20.0.0.6\build\net40\Leadtools.Pacs.DataAccessLayers.targets')" />
+  <Import Project="..\..\packages\Leadtools.Medical.WinForms.20.0.0.6\build\net40\Leadtools.Medical.WinForms.targets" Condition="Exists('..\..\packages\Leadtools.Medical.WinForms.20.0.0.6\build\net40\Leadtools.Medical.WinForms.targets')" />
+  <Import Project="..\..\packages\Leadtools.Pacs.EndUser.Addins.20.0.0.6\build\net40\Leadtools.Pacs.EndUser.Addins.targets" Condition="Exists('..\..\packages\Leadtools.Pacs.EndUser.Addins.20.0.0.6\build\net40\Leadtools.Pacs.EndUser.Addins.targets')" />
+  <Import Project="..\..\packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets" Condition="Exists('..\..\packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

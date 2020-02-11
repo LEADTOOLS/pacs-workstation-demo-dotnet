@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AeTitles" targetNamespace="http://tempuri.org/AeTitles.xsd" xmlns:mstns="http://tempuri.org/AeTitles.xsd" xmlns="http://tempuri.org/AeTitles.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AeTitles" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="AeTitles" msprop:Generator_DataSetName="AeTitles" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AeTitle" msprop:Generator_UserTableName="AeTitle" msprop:Generator_RowDeletedName="AeTitleRowDeleted" msprop:Generator_RowChangedName="AeTitleRowChanged" msprop:Generator_RowClassName="AeTitleRow" msprop:Generator_RowChangingName="AeTitleRowChanging" msprop:Generator_RowEvArgName="AeTitleRowChangeEvent" msprop:Generator_RowEvHandlerName="AeTitleRowChangeEventHandler" msprop:Generator_TableClassName="AeTitleDataTable" msprop:Generator_TableVarName="tableAeTitle" msprop:Generator_RowDeletingName="AeTitleRowDeleting" msprop:Generator_TablePropName="AeTitle">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AETitle" msprop:Generator_UserColumnName="AETitle" msprop:Generator_ColumnVarNameInTable="columnAETitle" msprop:Generator_ColumnPropNameInRow="AETitle" msprop:Generator_ColumnPropNameInTable="AETitleColumn" type="xs:string" />
+              <xs:element name="Address" msprop:Generator_UserColumnName="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Port" msprop:Generator_UserColumnName="Port" msprop:Generator_ColumnVarNameInTable="columnPort" msprop:Generator_ColumnPropNameInRow="Port" msprop:Generator_ColumnPropNameInTable="PortColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="SecurePort" msprop:Generator_UserColumnName="SecurePort" msprop:Generator_ColumnVarNameInTable="columnSecurePort" msprop:Generator_ColumnPropNameInRow="SecurePort" msprop:Generator_ColumnPropNameInTable="SecurePortColumn" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AeTitle" />
+      <xs:field xpath="mstns:AETitle" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

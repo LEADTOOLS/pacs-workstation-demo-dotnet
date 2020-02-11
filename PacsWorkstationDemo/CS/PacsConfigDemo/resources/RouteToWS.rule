@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RouterScript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Expression>this.element(Leadtools.Dicom.DicomTag.Modality).ToString() == "MR"</Expression>
+  <Name>RouteToWS</Name>
+  <Servers>
+    <RouterServer>
+      <AETitle>LEAD17_WS_SERVER</AETitle>
+      <IPHostname>192.168.0.195</IPHostname>
+      <Port>205</Port>
+      <Timeout>30</Timeout>
+      <UseTls>false</UseTls>
+      <Certificate />
+      <PrivateKey />
+      <KeyPassword />
+      <RetryCount>0</RetryCount>
+      <LastStatus>Success</LastStatus>
+      <Compression>Native</Compression>
+    </RouterServer>
+  </Servers>
+</RouterScript>

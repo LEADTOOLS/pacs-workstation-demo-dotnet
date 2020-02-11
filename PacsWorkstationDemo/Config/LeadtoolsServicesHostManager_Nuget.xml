@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<lead_services_host_manager>
+   <settings>
+      <useLEADInstallation>False</useLEADInstallation>
+      <useNuget>True</useNuget>
+   </settings>
+   <groups>
+      <group>
+         <name>LEADTOOLS HTML5 Medical Web Viewer Framework (Version 20)</name>
+         <description>HTML 5 Medical Viewer and REST Services with JSON support for viewing DICOM images in any browser.</description>
+         <version>20.0.0.0</version>
+         <items>
+            <item>Leadtools.MedicalViewerService.ASP (Version 20)</item>
+            <item>Leadtools.MedicalViewerService.WCF (Version 20)</item>
+            <item>LEADTOOLS HTML5 Medical Viewer Demo (Version 20)</item>
+            <!--<item>Leadtools.Medical.WebViewer.IdP</item> -->
+         </items>
+      </group>
+   </groups>
+   <items>
+      <!--
+      <item>
+         <name>Leadtools.Medical.WebViewer.IdP</name>
+         <type>Service</type>
+         <description>Middleware Service to allow external IdP support for the LEADTOOLS HTML 5 Medical Viewer demo.</description>
+         <project_dir>DotNet\PACSFramework\MedicalWebViewer\Leadtools.Medical.WebViewer.IdP\IdP</project_dir>
+         <iis_virtual_path>MedicalViewerIdPLink</iis_virtual_path>
+         <iis_physical_path>DotNet\PACSFramework\MedicalWebViewer\Leadtools.Medical.WebViewer.IdP\IdP</iis_physical_path>
+         <is_iis_application>True</is_iis_application>
+         <tests>
+         </tests>
+         <config_files>
+         </config_files>
+         <assemblies>
+   
+            <assembly target="roslyn">roslyn\csc.exe</assembly>
+            <assembly target="roslyn">roslyn\csc.exe.config</assembly>
+            <assembly target="roslyn">roslyn\csc.rsp</assembly>
+            <assembly target="roslyn">roslyn\csi.exe</assembly>
+            <assembly target="roslyn">roslyn\csi.exe.config</assembly>
+            <assembly target="roslyn">roslyn\csi.rsp</assembly>
+            <assembly target="roslyn">roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll</assembly>
+            <assembly target="roslyn">roslyn\Microsoft.CodeAnalysis.CSharp.dll</assembly>
+            <assembly target="roslyn">roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll</assembly>
+            <assembly target="roslyn">roslyn\Microsoft.CodeAnalysis.dll</assembly>
+            <assembly target="roslyn">roslyn\Microsoft.CodeAnalysis.Scripting.dll</assembly>
+            <assembly target="roslyn">roslyn\Microsoft.CodeAnalysis.VisualBasic.dll</assembly>
+            <assembly target="roslyn">roslyn\Microsoft.CSharp.Core.targets</assembly>
+            <assembly target="roslyn">roslyn\Microsoft.DiaSymReader.Native.amd64.dll</assembly>
+            <assembly target="roslyn">roslyn\Microsoft.DiaSymReader.Native.x86.dll</assembly>
+            <assembly target="roslyn">roslyn\Microsoft.VisualBasic.Core.targets</assembly>
+            <assembly target="roslyn">roslyn\Microsoft.Win32.Primitives.dll</assembly>
+            <assembly target="roslyn">roslyn\System.AppContext.dll</assembly>
+            <assembly target="roslyn">roslyn\System.Collections.Immutable.dll</assembly>
+            <assembly target="roslyn">roslyn\System.Console.dll</assembly>
+            <assembly target="roslyn">roslyn\System.Diagnostics.FileVersionInfo.dll</assembly>
+            <assembly target="roslyn">roslyn\System.Diagnostics.Process.dll</assembly>
+            <assembly target="roslyn">roslyn\System.Diagnostics.StackTrace.dll</assembly>
+            <assembly target="roslyn">roslyn\System.IO.Compression.dll</assembly>
+            <assembly target="roslyn">roslyn\System.IO.FileSystem.dll</assembly>
+            <assembly target="roslyn">roslyn\System.IO.FileSystem.DriveInfo.dll</assembly>
+            <assembly target="roslyn">roslyn\System.IO.FileSystem.Primitives.dll</assembly>
+            <assembly target="roslyn">roslyn\System.IO.Pipes.dll</assembly>
+            <assembly target="roslyn">roslyn\System.Reflection.Metadata.dll</assembly>
+            <assembly target="roslyn">roslyn\System.Security.AccessControl.dll</assembly>
+            <assembly target="roslyn">roslyn\System.Security.Claims.dll</assembly>
+            <assembly target="roslyn">roslyn\System.Security.Cryptography.Algorithms.dll</assembly>
+            <assembly target="roslyn">roslyn\System.Security.Cryptography.Encoding.dll</assembly>
+            <assembly target="roslyn">roslyn\System.Security.Cryptography.Primitives.dll</assembly>
+            <assembly target="roslyn">roslyn\System.Security.Cryptography.X509Certificates.dll</assembly>
+            <assembly target="roslyn">roslyn\System.Security.Principal.Windows.dll</assembly>
+            <assembly target="roslyn">roslyn\System.Text.Encoding.CodePages.dll</assembly>
+            <assembly target="roslyn">roslyn\System.Threading.Thread.dll</assembly>
+            <assembly target="roslyn">roslyn\System.ValueTuple.dll</assembly>
+            <assembly target="roslyn">roslyn\System.Xml.ReaderWriter.dll</assembly>
+            <assembly target="roslyn">roslyn\System.Xml.XmlDocument.dll</assembly>
+            <assembly target="roslyn">roslyn\System.Xml.XPath.dll</assembly>
+            <assembly target="roslyn">roslyn\System.Xml.XPath.XDocument.dll</assembly>
+            <assembly target="roslyn">roslyn\vbc.exe</assembly>
+            <assembly target="roslyn">roslyn\vbc.exe.config</assembly>
+            <assembly target="roslyn">roslyn\vbc.rsp</assembly>
+            <assembly target="roslyn">roslyn\VBCSCompiler.exe</assembly>
+            <assembly target="roslyn">roslyn\VBCSCompiler.exe.config</assembly>
+
+        
+            <assembly>Leadtools.Medical.WebViewer.IdP.dll</assembly>
+            <assembly>roslyn\IdentityModel.dll</assembly>
+            <assembly>roslyn\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</assembly>
+            <assembly>roslyn\Microsoft.IdentityModel.Logging.dll</assembly>
+            <assembly>roslyn\Microsoft.IdentityModel.Protocol.Extensions.dll</assembly>
+            <assembly>roslyn\Microsoft.IdentityModel.Protocols.dll</assembly>
+            <assembly>roslyn\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll</assembly>
+            <assembly>roslyn\Microsoft.IdentityModel.Tokens.dll</assembly>
+            <assembly>roslyn\Microsoft.Owin.dll</assembly>
+            <assembly>roslyn\Microsoft.Owin.Host.SystemWeb.dll</assembly>
+            <assembly>roslyn\Microsoft.Owin.Security.Cookies.dll</assembly>
+            <assembly>roslyn\Microsoft.Owin.Security.dll</assembly>
+            <assembly>roslyn\Microsoft.Owin.Security.OpenIdConnect.dll</assembly>
+            <assembly>roslyn\Microsoft.Web.Infrastructure.dll</assembly>
+            <assembly>roslyn\Newtonsoft.Json.dll</assembly>
+            <assembly>roslyn\OktaAspNetExample.dll</assembly>
+            <assembly>roslyn\Owin.dll</assembly>
+            <assembly>roslyn\System.IdentityModel.Tokens.Jwt.dll</assembly>
+            <assembly>roslyn\System.Net.Http.dll</assembly>
+            <assembly>roslyn\System.Security.Cryptography.Algorithms.dll</assembly>
+            <assembly>roslyn\System.Security.Cryptography.Encoding.dll</assembly>
+            <assembly>roslyn\System.Security.Cryptography.Primitives.dll</assembly>
+            <assembly>roslyn\System.Security.Cryptography.X509Certificates.dll</assembly>
+            <assembly>roslyn\System.ValueTuple.dll</assembly>
+            <assembly>roslyn\System.Web.Helpers.dll</assembly>
+            <assembly>roslyn\System.Web.Mvc.dll</assembly>
+            <assembly>roslyn\System.Web.Razor.dll</assembly>
+            <assembly>roslyn\System.Web.WebPages.Deployment.dll</assembly>
+            <assembly>roslyn\System.Web.WebPages.dll</assembly>
+            <assembly>roslyn\System.Web.WebPages.Razor.dll</assembly>
+            
+
+         </assemblies>
+      </item> -->
+      <item>
+         <name>Leadtools.MedicalViewerService.ASP (Version 20)</name>
+         <type>Service</type>
+         <description>REST Services (ASP.Net) with JSON support to be used by the LEADTOOLS HTML 5 Medical Viewer demo.</description>
+      <project_dir>MedicalWebViewer\Leadtools.Medical.WebViewer.ASP\Leadtools.Medical.WebViewer</project_dir>
+         <iis_virtual_path>MedicalViewerServiceAsp20</iis_virtual_path>
+      <iis_physical_path>MedicalWebViewer\Leadtools.Medical.WebViewer.ASP\Leadtools.Medical.WebViewer</iis_physical_path>
+         <is_iis_application>True</is_iis_application>
+         <tests>
+         </tests>
+         <config_files>
+         </config_files>
+         <assemblies>
+            <assembly>Leadtools.dll</assembly>
+
+            <assembly>Leadtools.Medical.WebViewer.Annotations.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.WebViewer.Addins.dll</assembly>
+            <assembly>Leadtools.Medical.WebViewer.Core.dll</assembly>
+            <assembly>Leadtools.Medical.WebViewer.ImageDownloadAddin.dll</assembly>
+            <assembly>Leadtools.Medical.WebViewer.Jobs.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.WebViewer.Jobs.dll</assembly>
+            <assembly>Leadtools.Medical.WebViewer.PatientAccessRights.DataAccessAgent.dll</assembly>
+            <assembly>Leadtools.Medical.WebViewer.Wado.dll</assembly>
+            <assembly>Leadtools.Medical.WebViewer.Asp.dll</assembly>
+
+
+            <assembly>Leadtools.Annotations.Engine.dll</assembly>
+            <assembly>Leadtools.Annotations.Rendering.WinForms.dll</assembly>
+            <assembly>Leadtools.Annotations.BatesStamp.dll</assembly>
+            <assembly>Leadtools.Pdf.Annotations.dll</assembly>
+            <assembly>Leadtools.Annotations.Automation.dll</assembly>
+            <assembly>Leadtools.Dicom.Annotations.dll</assembly>
+            <assembly>Leadtools.Annotations.WinForms.dll</assembly>
+
+            <assembly>Leadtools.Codecs.Cmp.dll</assembly>
+            <assembly>Leadtools.Codecs.Raw.dll</assembly>
+            <assembly>Leadtools.Codecs.J2k.dll</assembly>
+            <assembly>Leadtools.Codecs.Png.dll</assembly>
+            <assembly>Leadtools.Codecs.Bmp.dll</assembly>
+            <assembly>Leadtools.Codecs.Tif.dll</assembly>
+            <assembly>Leadtools.Codecs.Fax.dll</assembly>
+            <assembly>Leadtools.Codecs.Jls.dll</assembly>
+            <assembly>Leadtools.Codecs.dll</assembly>
+
+            <assembly>Leadtools.Dicom.Annotations.dll</assembly>
+            <assembly>Leadtools.Dicom.Scp.dll</assembly>
+            <assembly>Leadtools.Dicom.AddIn.dll</assembly>
+            <assembly>Leadtools.Dicom.Common.dll</assembly>
+            <assembly>Leadtools.Dicom.dll</assembly>
+            <assembly>Leadtools.Dicom.Scu.dll</assembly>
+            <assembly>Leadtools.Dicom.Server.Admin.dll</assembly>
+            <assembly>Leadtools.Dicom.Tables.dll</assembly>
+
+            <assembly>Leadtools.Medical.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.Options.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.PermissionsManagement.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.Storage.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.UserManagementDataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.ExternalStore.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.Logging.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.Winforms.dll</assembly>
+            <assembly>Leadtools.Medical.Workstation.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.Worklist.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.Storage.AddIns.dll</assembly>
+            <assembly>Leadtools.Medical.AeManagement.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.ImageProcessing.SpecialEffects.dll</assembly>
+            <assembly>Leadtools.ImageProcessing.Core.dll</assembly>
+            <assembly>Leadtools.ImageProcessing.Color.dll</assembly>
+            <assembly>Leadtools.ImageProcessing.Effects.dll</assembly>
+            <assembly>Leadtools.ImageProcessing.Utilities.dll</assembly>
+            <assembly>Leadtools.Pdf.Annotations.dll</assembly>
+            <assembly>Leadtools.Drawing.dll</assembly>
+            <assembly>Leadtools.Logging.dll</assembly>
+            <assembly>Leadtools.Logging.Medical.dll</assembly>
+            <assembly>Leadtools.DataAccessLayers.Core.dll</assembly>
+            <assembly>Leadtools.DataAccessLayers.dll</assembly>
+            <assembly>Leadtools.Wcf.WebHttpCorsBehavior.dll</assembly>
+            <assembly>Leadtools.Document.Writer.dll</assembly>
+            <assembly>Leadtools.Pdf.dll</assembly>
+            <assembly>Leadtools.Dicom.Imaging.dll</assembly>
+            <assembly>Leadtools.Tasks.dll</assembly>
+            <assembly>Leadtools.Tasks.ServerProcess.exe</assembly>
+            <assembly>Microsoft.Practices.EnterpriseLibrary.Common.dll</assembly>
+            <assembly>Microsoft.Practices.EnterpriseLibrary.Data.dll</assembly>
+            <assembly>Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll</assembly>
+            <assembly>Microsoft.Practices.EnterpriseLibrary.Logging.dll</assembly>
+            <assembly>Microsoft.Practices.Unity.dll</assembly>
+            <assembly>Microsoft.WindowsAzure.Storage.dll</assembly>
+            <assembly>Microsoft.CSharp.dll</assembly>
+            <assembly>System.Net.Http.Formatting.dll</assembly>
+            <assembly>System.Web.Cors.dll</assembly>
+            <assembly>System.Web.Http.Cors.dll</assembly>
+            <assembly>System.Web.Http.dll</assembly>
+            <assembly>System.Web.Http.WebHost.dll</assembly>
+            <assembly>Newtonsoft.Json.dll</assembly>
+            <assembly>Ionic.Zip.dll</assembly>
+            <assembly>EsuApiLib.dll</assembly>
+            <assembly>Leadtools.Medical3D.Client.dll</assembly>
+
+            <!--
+            <assembly>vcruntime140.dll</assembly>
+            <assembly>mfc140u.dll</assembly>
+            <assembly>msvcp140.dll</assembly>
+            -->
+
+         </assemblies>
+      </item>
+      <item>
+         <name>Leadtools.MedicalViewerService.WCF (Version 20)</name>
+         <type>Service</type>
+         <description>REST Services with JSON support to be used by the LEADTOOLS HTML 5 Medical Viewer demo.</description>
+         <project_dir>MedicalWebViewer\Leadtools.Medical.WebViewer.WCF</project_dir>
+         <iis_virtual_path>MedicalViewerServiceWcf20</iis_virtual_path>
+         <iis_physical_path>MedicalWebViewer\Leadtools.Medical.WebViewer.WCF</iis_physical_path>
+         <is_iis_application>True</is_iis_application>
+         <tests>
+         </tests>
+         <config_files>
+         </config_files>
+         <assemblies>
+            <assembly>Leadtools.Medical.Winforms.dll</assembly>
+            <assembly>Leadtools.Annotations.Engine.dll</assembly>
+            <assembly>Leadtools.Annotations.Rendering.WinForms.dll</assembly>
+            <assembly>Leadtools.Annotations.BatesStamp.dll</assembly>
+            <assembly>Leadtools.Pdf.Annotations.dll</assembly>
+            <assembly>Leadtools.Annotations.Automation.dll</assembly>
+            <assembly>Leadtools.Dicom.Annotations.dll</assembly>
+            <assembly>Leadtools.Dicom.Scp.dll</assembly>
+            <assembly>Leadtools.Medical.Storage.AddIns.dll</assembly>
+            <assembly>Leadtools.Codecs.Cmp.dll</assembly>
+            <assembly>Leadtools.Codecs.Raw.dll</assembly>
+            <assembly>Leadtools.Codecs.J2k.dll</assembly>
+            <assembly>Leadtools.Codecs.Png.dll</assembly>
+            <assembly>Leadtools.Codecs.Bmp.dll</assembly>
+            <assembly>Leadtools.Codecs.Tif.dll</assembly>
+            <assembly>Leadtools.Codecs.Fax.dll</assembly>
+            <assembly>Leadtools.Codecs.Jls.dll</assembly>
+            <assembly>Leadtools.Codecs.dll</assembly>
+            <assembly>Leadtools.Dicom.AddIn.dll</assembly>
+            <assembly>Leadtools.Dicom.Common.dll</assembly>
+            <assembly>Leadtools.Dicom.dll</assembly>
+            <assembly>Leadtools.Dicom.Scu.dll</assembly>
+            <assembly>Leadtools.Dicom.Tables.dll</assembly>
+            <assembly>Leadtools.dll</assembly>
+            <assembly>Leadtools.Drawing.dll</assembly>
+            <assembly>Leadtools.ImageProcessing.Core.dll</assembly>
+            <assembly>Leadtools.ImageProcessing.Color.dll</assembly>
+            <assembly>Leadtools.ImageProcessing.Effects.dll</assembly>
+            <assembly>Leadtools.ImageProcessing.Utilities.dll</assembly>
+            <assembly>Leadtools.Logging.dll</assembly>
+            <assembly>Leadtools.Logging.Medical.dll</assembly>
+            <assembly>Leadtools.Medical.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.Options.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.PermissionsManagement.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.Storage.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.UserManagementDataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.WebViewer.Annotations.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.WebViewer.Addins.dll</assembly>
+            <assembly>Leadtools.Medical.WebViewer.Core.dll</assembly>
+            <assembly>Leadtools.Medical.WebViewer.ImageDownloadAddin.dll</assembly>
+            <assembly>Leadtools.Medical.WebViewer.Jobs.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.WebViewer.Jobs.dll</assembly>
+            <assembly>Leadtools.Medical.WebViewer.PatientAccessRights.DataAccessAgent.dll</assembly>
+            <assembly>Leadtools.Medical.WebViewer.WCF.dll</assembly>
+            <assembly>Microsoft.Practices.EnterpriseLibrary.Common.dll</assembly>
+            <assembly>Microsoft.Practices.EnterpriseLibrary.Data.dll</assembly>
+            <assembly>Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll</assembly>
+            <assembly>Microsoft.Practices.EnterpriseLibrary.Logging.dll</assembly>
+            <assembly>Microsoft.Practices.Unity.dll</assembly>
+
+            <assembly>Leadtools.Medical.ExternalStore.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.Logging.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.DataAccessLayers.Core.dll</assembly>
+            <assembly>Leadtools.DataAccessLayers.dll</assembly>
+            <assembly>Leadtools.Medical.Workstation.DataAccessLayer.dll</assembly>
+            <assembly>Leadtools.Medical.Worklist.DataAccessLayer.dll</assembly>
+            <assembly>Ionic.Zip.dll</assembly>
+            <assembly>Leadtools.Wcf.WebHttpCorsBehavior.dll</assembly>
+            <assembly>EsuApiLib.dll</assembly>
+            <assembly>Microsoft.WindowsAzure.Storage.dll</assembly>
+            <assembly>Leadtools.Document.Writer.dll</assembly>
+            <assembly>Leadtools.Pdf.dll</assembly>
+            <assembly>Leadtools.Annotations.WinForms.dll</assembly>
+            <!--<assembly>Leadtools.MedicalViewer.dll</assembly>-->
+            <assembly>Leadtools.Dicom.Imaging.dll</assembly>
+            <assembly>Leadtools.Tasks.ServerProcess.exe</assembly>
+            <assembly>Leadtools.Tasks.dll</assembly>
+            <assembly>Leadtools.Medical3D.Client.dll</assembly> 
+
+            <!--
+            <assembly>vcruntime140.dll</assembly>
+            <assembly>mfc140u.dll</assembly>
+            <assembly>msvcp140.dll</assembly>
+            -->
+         </assemblies>
+      </item>
+
+
+      <item>
+         <name>LEADTOOLS HTML5 Medical Viewer Demo (Version 20)</name>
+         <type>Demo</type>
+         <description>LEADTOOLS HTML5 Medical Viewer for viewing DICOM images on any browser.</description>
+         <project_dir>MedicalWebViewer\JS\MedicalWebViewerDemo</project_dir>
+         <iis_virtual_path>MedicalViewer20</iis_virtual_path>
+         <iis_physical_path>MedicalWebViewer\JS\MedicalWebViewerDemo</iis_physical_path>
+         <is_iis_application>True</is_iis_application>
+         <tests>
+            <test>
+               <name>Medical Web Viewer</name>
+               <url>index.html</url>
+            </test>
+         </tests>
+         <assemblies>
+            <!--<assembly>MedicalWebViewerDemo.dll</assembly>-->
+         </assemblies>
+      </item>
+
+   </items>
+</lead_services_host_manager>

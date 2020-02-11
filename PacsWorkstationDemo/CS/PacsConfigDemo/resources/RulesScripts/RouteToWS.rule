@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ServerRule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>RouteToPACS</Name>
+  <Priority>1</Priority>
+  <Active>true</Active>
+  <Script>if status = DicomCommandStatusType.Success then
+	'
+	' If we successfully got store the image we will send a request
+	' to the server to retrieve the specific instance
+	'
+	get_dataset(instanceUID, AddressOf RouteDataset) 
+end if
+
+Public Sub RouteDataset(dataset AS DicomDS, referencedFile AS string, instance AS string, getError AS string)		
+
+	'
+	' If we have a valid dataset we will route it to the specified server
+	'
+	if dataset IsNot Nothing And dataset(DicomTag.Modality) = "MR" then
+	   route(dataset,"DEMO_SERVER")
+    end if
+
+End Sub</Script>
+  <ServerEvent>SendCStoreResponse</ServerEvent>
+  <Namespaces />
+  <References />
+</ServerRule>

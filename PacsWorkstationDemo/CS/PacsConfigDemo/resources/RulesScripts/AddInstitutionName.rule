@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ServerRule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>AddInstitutionName</Name>
+  <Priority>1</Priority>
+  <Active>true</Active>
+  <Script>request(DicomTag.InstitutionName) = "LEAD Medical Center"</Script>
+  <ServerEvent>ReceiveCStoreRequest</ServerEvent>
+  <Namespaces />
+  <References />
+</ServerRule>
+
+
