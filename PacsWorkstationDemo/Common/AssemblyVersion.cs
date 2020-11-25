@@ -1,5 +1,5 @@
 ﻿// *************************************************************
-// Copyright (c) 1991-2019 LEAD Technologies, Inc.              
+// Copyright (c) 1991-2020 LEAD Technologies, Inc.              
 // All Rights Reserved.                                         
 // *************************************************************
 //
@@ -12,7 +12,7 @@ partial struct AssemblyVersionNumber
    public const string CompanyName                 = "LEAD Technologies, Inc.";
    public const string Configuration               = "";
    public const string Trademark                   = "LEADTOOLS © is a trademark of LEAD Technologies, Inc.";
-   public const string Copyright                   = "Copyright (c) 1991-2019 LEAD Technologies, Inc.";
+   public const string Copyright                   = "Copyright (c) 1991-2020 LEAD Technologies, Inc.";
 #if LEADTOOLS_V19_OR_LATER_MEDICAL_EXTERNAL_STORE
    public const string DllExt                      = "(ES).dll";
 #else
@@ -46,7 +46,7 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.Winforms.dll
    public const string TitleMedicalWinforms                    = "Leadtools.Medical.WinForms" + DllExt;
    public const string DescriptionMedicalWinforms              = "Medical Windows Forms";
-   public const string FileVersionMedicalWinforms              = "17.5.0.56";
+   public const string FileVersionMedicalWinforms              = "17.5.0.57";
 
    // Leadtools.Medical.Ae.Configuration.dll
    public const string TitleMedicalAeConfiguration             = "Leadtools.Medical.Ae.Configuration" + DllExt;
@@ -61,12 +61,12 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.Forwarder.AddIn.dll
    public const string TitleMedicalForwarderAddin              = "Leadtools.Medical.Forwarder.AddIn" + DllExt;
    public const string DescriptionMedicalForwarderAddin        = "Leadtools.Medical.Forwarder.AddIn";
-   public const string FileVersionMedicalForwarderAddin        = "17.5.0.7";
+   public const string FileVersionMedicalForwarderAddin        = "17.5.0.9";
 
    // Leadtools.Medical.Gateway.AddIn.dll
    public const string TitleMedicalGatewayAddin                = "Leadtools.Medical.Gateway.AddIn" + DllExt;
    public const string DescriptionMedicalGatewayAddin          = "Leadtools.Medical.Gateway.AddIn";
-   public const string FileVersionMedicalGatewayAddin          = "17.5.0.3";
+   public const string FileVersionMedicalGatewayAddin          = "17.5.0.4";
 
    // Leadtools.Medical.License.Configuration.dll
    public const string TitleMedicalLicenseConfiguration        = "Leadtools.Medical.License.Configuration" + DllExt;
@@ -91,7 +91,7 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.Storage.AddIns.dll
    public const string TitleMedicalStorageAddin                = "Leadtools.Medical.Storage.AddIns" + DllExt;
    public const string DescriptionMedicalStorageAddin          = "Leadtools.Medical.Storage.AddIns";
-   public const string FileVersionMedicalStorageAddin          = "17.5.0.16";
+   public const string FileVersionMedicalStorageAddin          = "17.5.0.17";
 
    // Leadtools.Medical.Worklist.AddIns.dll
    public const string TitleMedicalWorklistAddin               = "Leadtools.Medical.Worklist.AddIns" + DllExt;
@@ -144,7 +144,7 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.Winforms.dll
    public const string TitleMedicalWinforms                    = "Leadtools.Medical.WinForms" + DllExt;
    public const string DescriptionMedicalWinforms              = "Medical Windows Forms";
-   public const string FileVersionMedicalWinforms              = "18.0.0.63";
+   public const string FileVersionMedicalWinforms              = "18.0.0.64";
 
    // Leadtools.Medical.Ae.Configuration.dll
    public const string TitleMedicalAeConfiguration             = "Leadtools.Medical.Ae.Configuration" + DllExt;
@@ -179,12 +179,12 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.Forwarder.AddIn.dll
    public const string TitleMedicalForwarderAddin              = "Leadtools.Medical.Forwarder.AddIn" + DllExt;
    public const string DescriptionMedicalForwarderAddin        = "Leadtools.Medical.Forwarder.AddIn";
-   public const string FileVersionMedicalForwarderAddin        = "18.0.0.9";
+   public const string FileVersionMedicalForwarderAddin        = "18.0.0.11";
 
    // Leadtools.Medical.Gateway.AddIn.dll
    public const string TitleMedicalGatewayAddin                = "Leadtools.Medical.Gateway.AddIn" + DllExt;
    public const string DescriptionMedicalGatewayAddin          = "Leadtools.Medical.Gateway.AddIn";
-   public const string FileVersionMedicalGatewayAddin          = "18.0.0.5";
+   public const string FileVersionMedicalGatewayAddin          = "18.0.0.7";
 
    // Leadtools.Medical.License.Configuration.dll
    public const string TitleMedicalLicenseConfiguration        = "Leadtools.Medical.License.Configuration" + DllExt;
@@ -209,7 +209,7 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.Storage.AddIns.dll
    public const string TitleMedicalStorageAddin                = "Leadtools.Medical.Storage.AddIns" + DllExt;
    public const string DescriptionMedicalStorageAddin          = "Leadtools.Medical.Storage.AddIns";
-   public const string FileVersionMedicalStorageAddin          = "18.0.0.21";
+   public const string FileVersionMedicalStorageAddin          = "18.0.0.22";
 
    // Leadtools.Medical.Worklist.AddIns.dll
    public const string TitleMedicalWorklistAddin               = "Leadtools.Medical.Worklist.AddIns" + DllExt;
@@ -229,7 +229,7 @@ partial struct AssemblyVersionNumber
    // Leadtools.DataAccessLayers.dll
    public const string TitleDataAccessLayers                            = "Leadtools.DataAccessLayers" + DllExt;
    public const string DescriptionDataAccessLayers                      = "Leadtools.DataAccessLayers";
-   public const string FileVersionDataAccessLayers                      = "18.0.0.5";
+   public const string FileVersionDataAccessLayers                      = "18.0.0.6";
    
    // Leadtools.DataAccessLayers.Core
    public const string TitleDataAccessLayersCore1                                       = "Leadtools.DataAccessLayers.Core" + DllExt;
@@ -269,7 +269,7 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.WebViewer.Addins
    public const string TitleMedicalWebViewerAddins                                     = "Leadtools.Medical.WebViewer.Addins" + DllExt;
    public const string DescriptionMedicalWebViewerAddins                               = "Leadtools.Medical.WebViewer.Addins";
-   public const string FileVersionMedicalWebViewerAddins                               = "18.0.0.4";
+   public const string FileVersionMedicalWebViewerAddins                               = "18.0.0.5";
 
    // Leadtools.Medical.WebViewer.Annotations.DataAccessLayer
    public const string TitleMedicalWebViewerAnnotationsDataAccessLayer                                 = "Leadtools.Medical.WebViewer.Annotations.DataAccessLayer" + DllExt;
@@ -304,7 +304,7 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.WebViewer.WCF
    public const string TitleMedicalWebViewerWCF                               = "Leadtools.Medical.WebViewer.WCF"+ DllExt;
    public const string DescriptionMedicalWebViewerWCF                         = "Leadtools.Medical.WebViewer.WCF";
-   public const string FileVersionMedicalWebViewerWCF                         = "18.0.0.16";
+   public const string FileVersionMedicalWebViewerWCF                         = "18.0.0.17";
 
    // Leadtools.Medical.WebViewer.ExternalControl
    public const string TitleMedicalWebViewerExternalControl                               = "Leadtools.Medical.WebViewer.ExternalControl"+ DllExt;
@@ -344,7 +344,7 @@ partial struct AssemblyVersionNumber
    // DicomHighlevelPatientUpdaterDemo
    public const string TitleDicomHighlevelPatientUpdaterDemo                                 = "DicomHighlevelPatientUpdaterDemo"+ ExeExt;
    public const string DescriptionDicomHighlevelPatientUpdaterDemo                           = "DicomHighlevelPatientUpdaterDemo";
-   public const string FileVersionDicomHighlevelPatientUpdaterDemo                           = "18.0.0.8";
+   public const string FileVersionDicomHighlevelPatientUpdaterDemo                           = "18.0.0.89";
 
    // DicomHighlevelStoreDemo
    public const string TitleDicomHighlevelStoreDemo                                          = "DicomHighlevelStoreDemo"+ ExeExt;
@@ -361,20 +361,20 @@ partial struct AssemblyVersionNumber
    public const string DescriptionMedicalWorkstationMainDemo                                 = "MedicalWorkstationMainDemo";
    public const string FileVersionMedicalWorkstationMainDemo                                 = "18.0.0.7";
 
-   // PacsConfigDemo
+   // CSPacsConfigDemo
    public const string TitlePacsConfigDemo                                                   = "PacsConfigDemo"+ ExeExt;
    public const string DescriptionPacsConfigDemo                                             = "PacsConfigDemo";
    public const string FileVersionPacsConfigDemo                                             = "18.0.0.23";
 
-   // PacsDatabaseConfigurationDemo
+   // CSPacsDatabaseConfigurationDemo
    public const string TitlePacsDatabaseConfigurationDemo                                    = "PacsDatabaseConfigurationDemo"+ ExeExt;
    public const string DescriptionPacsDatabaseConfigurationDemo                              = "PacsDatabaseConfigurationDemo";
    public const string FileVersionPacsDatabaseConfigurationDemo                              = "18.0.0.38";
 
-   // StorageServerManager
+   // CSStorageServerManager.exe
    public const string TitleStorageServerManager                                             = "StorageServerManager"+ ExeExt;
    public const string DescriptionStorageServerManager                                       = "StorageServerManager";
-   public const string FileVersionStorageServerManager                                       = "18.0.0.33";
+   public const string FileVersionStorageServerManager                                       = "18.0.0.35";
 
    // CCowClientDemo
    public const string TitleCCowClientDemo                                                   = "CCowClientDemo"+ ExeExt;
@@ -399,7 +399,7 @@ partial struct AssemblyVersionNumber
    // WebViewerConfiguration
    public const string TitleWebViewerConfiguration                               = "WebViewerConfiguration"+ ExeExt;
    public const string DescriptionWebViewerConfiguration                         = "WebViewerConfiguration";
-   public const string FileVersionWebViewerConfiguration                                     = "18.0.0.64";
+   public const string FileVersionWebViewerConfiguration                                     = "18.0.0.65";
 
 #endif // #if  LTV18_CONFIG
 
@@ -416,7 +416,7 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.Winforms.dll
    public const string TitleMedicalWinforms                    = "Leadtools.Medical.WinForms" + DllExt;
    public const string DescriptionMedicalWinforms              = "Medical Windows Forms";
-   public const string FileVersionMedicalWinforms              = "19.0.0.59";
+   public const string FileVersionMedicalWinforms              = "19.0.0.66";
 
    // Leadtools.Medical.Ae.Configuration.dll
    public const string TitleMedicalAeConfiguration             = "Leadtools.Medical.Ae.Configuration" + DllExt;
@@ -451,12 +451,12 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.Forwarder.AddIn.dll
    public const string TitleMedicalForwarderAddin              = "Leadtools.Medical.Forwarder.AddIn" + DllExt;
    public const string DescriptionMedicalForwarderAddin        = "Leadtools.Medical.Forwarder.AddIn";
-   public const string FileVersionMedicalForwarderAddin        = "19.0.0.8";
+   public const string FileVersionMedicalForwarderAddin        = "19.0.0.10";
 
    // Leadtools.Medical.Gateway.AddIn.dll
    public const string TitleMedicalGatewayAddin                = "Leadtools.Medical.Gateway.AddIn" + DllExt;
    public const string DescriptionMedicalGatewayAddin          = "Leadtools.Medical.Gateway.AddIn";
-   public const string FileVersionMedicalGatewayAddin          = "19.0.0.4";
+   public const string FileVersionMedicalGatewayAddin          = "19.0.0.6";
 
    // Leadtools.Medical.License.Configuration.dll
    public const string TitleMedicalLicenseConfiguration        = "Leadtools.Medical.License.Configuration" + DllExt;
@@ -481,7 +481,7 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.Storage.AddIns.dll
    public const string TitleMedicalStorageAddin                = "Leadtools.Medical.Storage.AddIns" + DllExt;
    public const string DescriptionMedicalStorageAddin          = "Leadtools.Medical.Storage.AddIns";
-   public const string FileVersionMedicalStorageAddin          = "19.0.0.24";
+   public const string FileVersionMedicalStorageAddin          = "19.0.0.27";
 
    // Leadtools.Medical.Worklist.AddIns.dll
    public const string TitleMedicalWorklistAddin               = "Leadtools.Medical.Worklist.AddIns" + DllExt;
@@ -491,7 +491,7 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.AeManagement.DataAccessLayer.dll
    public const string TitleMedicalAeManagementDataAccessLayer = "Leadtools.Medical.AeManagement.DataAccessLayer" + DllExt;
    public const string DescriptionAeManagementDataAccessLayer  = "Leadtools.Medical.AeManagement.DataAccessLayer";
-   public const string FileVersionAeManagementDataAccessLayer  = "19.0.0.5";
+   public const string FileVersionAeManagementDataAccessLayer  = "19.0.0.56";
 
    // Leadtools.Medical.Forward.DataAccessLayer.dll
    public const string TitleMedicalForwardDataAccessLayer                            = "Leadtools.Medical.Forward.DataAccessLayer" + DllExt;
@@ -501,7 +501,7 @@ partial struct AssemblyVersionNumber
    // Leadtools.DataAccessLayers.dll
    public const string TitleDataAccessLayers                            = "Leadtools.DataAccessLayers" + DllExt;
    public const string DescriptionDataAccessLayers                      = "Leadtools.DataAccessLayers";
-   public const string FileVersionDataAccessLayers                      = "19.0.0.6";
+   public const string FileVersionDataAccessLayers                      = "19.0.0.7";
    
    // Leadtools.DataAccessLayers.Core
    public const string TitleDataAccessLayersCore1                                       = "Leadtools.DataAccessLayers.Core" + DllExt;
@@ -536,17 +536,17 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.HL7MWL.AddIn
    public const string TitleMedicalHL7MWLAddIn                                         = "Leadtools.Medical.HL7MWL.AddIn" + DllExt;
    public const string DescriptionMedicalHL7MWLAddIn                                   = "Leadtools.Medical.HL7MWL.AddIn";
-   public const string FileVersionMedicalHL7MWLAddIn                                   = "19.0.0.1";
+   public const string FileVersionMedicalHL7MWLAddIn                                   = "19.0.0.3";
 
-   // Leadtools.Medical.HL7MWL.AddIn
+   // Leadtools.Medical.HL7PatientUpdate.AddIn
    public const string TitleMedicalHL7PatientUpdateAddIn                               = "Leadtools.Medical.HL7PatientUpdate.AddIn" + DllExt;
    public const string DescriptionMedicalHL7PatientUpdateAddIn                         = "Leadtools.Medical.HL7PatientUpdate.AddIn";
-   public const string FileVersionMedicalHL7PatientUpdateAddIn                         = "19.0.0.1";
+   public const string FileVersionMedicalHL7PatientUpdateAddIn                         = "19.0.0.4";
 
    // Leadtools.Medical.WebViewer.Addins
    public const string TitleMedicalWebViewerAddins                                     = "Leadtools.Medical.WebViewer.Addins" + DllExt;
    public const string DescriptionMedicalWebViewerAddins                               = "Leadtools.Medical.WebViewer.Addins";
-   public const string FileVersionMedicalWebViewerAddins                               = "19.0.0.41";
+   public const string FileVersionMedicalWebViewerAddins                               = "19.0.0.43";
 
    // Leadtools.Medical.WebViewer.Annotations.DataAccessLayer
    public const string TitleMedicalWebViewerAnnotationsDataAccessLayer                                 = "Leadtools.Medical.WebViewer.Annotations.DataAccessLayer" + DllExt;
@@ -586,7 +586,7 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.WebViewer.WCF
    public const string TitleMedicalWebViewerWCF                               = "Leadtools.Medical.WebViewer.WCF"+ DllExt;
    public const string DescriptionMedicalWebViewerWCF                         = "Leadtools.Medical.WebViewer.WCF";
-   public const string FileVersionMedicalWebViewerWCF                         = "19.0.0.20";
+   public const string FileVersionMedicalWebViewerWCF                         = "19.0.0.21";
 
    // Leadtools.Medical.WebViewer.ExternalControl
    public const string TitleMedicalWebViewerExternalControl                               = "Leadtools.Medical.WebViewer.ExternalControl"+ DllExt;
@@ -682,7 +682,7 @@ partial struct AssemblyVersionNumber
    // DicomHighlevelPatientUpdaterDemo
    public const string TitleDicomHighlevelPatientUpdaterDemo                                 = "DicomHighlevelPatientUpdaterDemo"+ ExeExt;
    public const string DescriptionDicomHighlevelPatientUpdaterDemo                           = "DicomHighlevelPatientUpdaterDemo";
-   public const string FileVersionDicomHighlevelPatientUpdaterDemo                           = "19.0.0.10";
+   public const string FileVersionDicomHighlevelPatientUpdaterDemo                           = "19.0.0.11";
 
    // DicomHighlevelStoreDemo
    public const string TitleDicomHighlevelStoreDemo                                          = "DicomHighlevelStoreDemo"+ ExeExt;
@@ -692,27 +692,27 @@ partial struct AssemblyVersionNumber
    // Leadtools.Dicom.Server.Manager
    public const string TitleLeadtoolsDicomServerManager                                      = "Leadtools.Dicom.Server.Manager"+ ExeExt;
    public const string DescriptionLeadtoolsDicomServerManager                                = "Leadtools.Dicom.Server.Manager";
-   public const string FileVersionLeadtoolsDicomServerManager                                = "19.0.0.7";
+   public const string FileVersionLeadtoolsDicomServerManager                                = "19.0.0.8";
 
    // MedicalWorkstationMainDemo
    public const string TitleMedicalWorkstationMainDemo                                       = "MedicalWorkstationMainDemo"+ ExeExt;
    public const string DescriptionMedicalWorkstationMainDemo                                 = "MedicalWorkstationMainDemo";
    public const string FileVersionMedicalWorkstationMainDemo                                 = "19.0.0.8";
 
-   // PacsConfigDemo
+   // CSPACSConfigDemo.exe
    public const string TitlePacsConfigDemo                                                   = "PacsConfigDemo"+ ExeExt;
    public const string DescriptionPacsConfigDemo                                             = "PacsConfigDemo";
-   public const string FileVersionPacsConfigDemo                                             = "19.0.0.23";
+   public const string FileVersionPacsConfigDemo                                             = "19.0.0.25";
 
-   // PacsDatabaseConfigurationDemo
+   // CSPacsDatabaseConfigurationDemo.exe
    public const string TitlePacsDatabaseConfigurationDemo                                    = "PacsDatabaseConfigurationDemo"+ ExeExt;
    public const string DescriptionPacsDatabaseConfigurationDemo                              = "PacsDatabaseConfigurationDemo";
-   public const string FileVersionPacsDatabaseConfigurationDemo                              = "19.0.0.44";
+   public const string FileVersionPacsDatabaseConfigurationDemo                              = "19.0.0.47";
 
-   // StorageServerManager
+   // CSStorageServerManager.exe
    public const string TitleStorageServerManager                                             = "StorageServerManager"+ ExeExt;
    public const string DescriptionStorageServerManager                                       = "StorageServerManager";
-   public const string FileVersionStorageServerManager                                       = "19.0.0.39";
+   public const string FileVersionStorageServerManager                                       = "19.0.0.43";
 
    // CCowClientDemo
    public const string TitleCCowClientDemo                                 = "CCowClientDemo"+ ExeExt;
@@ -737,7 +737,7 @@ partial struct AssemblyVersionNumber
    // WebViewerConfiguration
    public const string TitleWebViewerConfiguration                               = "WebViewerConfiguration"+ ExeExt;
    public const string DescriptionWebViewerConfiguration                         = "WebViewerConfiguration";
-   public const string FileVersionWebViewerConfiguration                         = "19.0.0.71";
+   public const string FileVersionWebViewerConfiguration                         = "19.0.0.74";
 
    // ChangeMedicalViewerToDental
    public const string TitleChangeMedicalViewerToDental                          = "ChangeMedicalViewerToDental"+ ExeExt;
@@ -747,7 +747,7 @@ partial struct AssemblyVersionNumber
    // LeadtoolsServicesHostManager
    public const string TitleLeadtoolsServicesHostManager                               = "LeadtoolsServicesHostManager"+ ExeExt;
    public const string DescriptionLeadtoolsServicesHostManager                         = "LeadtoolsServicesHostManager";
-   public const string FileVersionLeadtoolsServicesHostManager                         = "19.0.0.15";
+   public const string FileVersionLeadtoolsServicesHostManager                         = "19.0.0.16";
 
    // Leadtools.Medical.ViewImage
    public const string TitleMedicalViewImage = "Leadtools.Medical.ViewImage" + DllExt;
@@ -770,7 +770,7 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.Winforms.dll
    public const string TitleMedicalWinforms = "Leadtools.Medical.WinForms" + DllExt;
    public const string DescriptionMedicalWinforms = "Medical Windows Forms";
-   public const string FileVersionMedicalWinforms = "20.0.0.24";
+   public const string FileVersionMedicalWinforms = "20.0.0.57";
 
    // Leadtools.Medical.Ae.Configuration.dll
    public const string TitleMedicalAeConfiguration = "Leadtools.Medical.Ae.Configuration" + DllExt;
@@ -780,12 +780,12 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.AutoCopy.dll
    public const string TitleMedicalAutoCopyAddin = "Leadtools.Medical.AutoCopy.AddIn" + DllExt;
    public const string DescriptionMedicalAutoCopyAddin = "Leadtools.Medical.AutoCopy.AddIn";
-   public const string FileVersionMedicalAutoCopyAddin = "20.0.0.4";
+   public const string FileVersionMedicalAutoCopyAddin = "20.0.0.5";
 
    // Leadtools.Medical.ExternalStore.AddIn.dll
    public const string TitleMedicalExternalStoreAddin = "Leadtools.Medical.ExternalStore.AddIn" + DllExt;
    public const string DescriptionMedicalExternalStoreAddin = "Leadtools.Medical.ExternalStore.AddIn";
-   public const string FileVersionMedicalExternalStoreAddin = "20.0.0.1";
+   public const string FileVersionMedicalExternalStoreAddin = "20.0.0.2";
 
    // Leadtools.Medical.ExternalStore.Atmos.AddIn.dll
    public const string TitleMedicalExternalStoreAtmosAddin = "Leadtools.Medical.ExternalStore.Atmos.AddIn" + DllExt;
@@ -810,12 +810,12 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.Forwarder.AddIn.dll
    public const string TitleMedicalForwarderAddin = "Leadtools.Medical.Forwarder.AddIn" + DllExt;
    public const string DescriptionMedicalForwarderAddin = "Leadtools.Medical.Forwarder.AddIn";
-   public const string FileVersionMedicalForwarderAddin = "20.0.0.5";
+   public const string FileVersionMedicalForwarderAddin = "20.0.0.17";
 
    // Leadtools.Medical.Gateway.AddIn.dll
    public const string TitleMedicalGatewayAddin = "Leadtools.Medical.Gateway.AddIn" + DllExt;
    public const string DescriptionMedicalGatewayAddin = "Leadtools.Medical.Gateway.AddIn";
-   public const string FileVersionMedicalGatewayAddin = "20.0.0.2";
+   public const string FileVersionMedicalGatewayAddin = "20.0.0.6";
 
    // Leadtools.Medical.License.Configuration.dll
    public const string TitleMedicalLicenseConfiguration = "Leadtools.Medical.License.Configuration" + DllExt;
@@ -835,37 +835,37 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.PatientUpdater.AddIn
    public const string TitleMedicalPatientUpdaterAddin = "Leadtools.Medical.PatientUpdater.AddIn" + DllExt;
    public const string DescriptionMedicalPatientUpdaterAddin = "Leadtools.Medical.PatientUpdater.AddIn";
-   public const string FileVersionMedicalPatientUpdaterAddin = "20.0.0.2";
+   public const string FileVersionMedicalPatientUpdaterAddin = "20.0.0.7";
 
    // Leadtools.Medical.Storage.AddIns.dll
    public const string TitleMedicalStorageAddin = "Leadtools.Medical.Storage.AddIns" + DllExt;
    public const string DescriptionMedicalStorageAddin = "Leadtools.Medical.Storage.AddIns";
-   public const string FileVersionMedicalStorageAddin = "20.0.0.2";
+   public const string FileVersionMedicalStorageAddin = "20.0.0.9";
 
    // Leadtools.Medical.Worklist.AddIns.dll
    public const string TitleMedicalWorklistAddin = "Leadtools.Medical.Worklist.AddIns" + DllExt;
    public const string DescriptionMedicalWorklistAddin = "Leadtools.Medical.Worklist.AddIns";
-   public const string FileVersionMedicalWorklistAddin = "20.0.0.1";
+   public const string FileVersionMedicalWorklistAddin = "20.0.0.3";
 
    // Leadtools.Medical.AeManagement.DataAccessLayer.dll
    public const string TitleMedicalAeManagementDataAccessLayer = "Leadtools.Medical.AeManagement.DataAccessLayer" + DllExt;
    public const string DescriptionAeManagementDataAccessLayer = "Leadtools.Medical.AeManagement.DataAccessLayer";
-   public const string FileVersionAeManagementDataAccessLayer = "20.0.0.4";
+   public const string FileVersionAeManagementDataAccessLayer = "20.0.0.5";
 
    // Leadtools.Medical.Forward.DataAccessLayer.dll
    public const string TitleMedicalForwardDataAccessLayer = "Leadtools.Medical.Forward.DataAccessLayer" + DllExt;
    public const string DescriptionMedicalForwardDataAccessLayer = "Leadtools.Medical.Forward.DataAccessLayer";
-   public const string FileVersionMedicalForwardDataAccessLayer = "20.0.0.1";
+   public const string FileVersionMedicalForwardDataAccessLayer = "20.0.0.3";
 
    // Leadtools.DataAccessLayers.dll
    public const string TitleDataAccessLayers = "Leadtools.DataAccessLayers" + DllExt;
    public const string DescriptionDataAccessLayers = "Leadtools.DataAccessLayers";
-   public const string FileVersionDataAccessLayers = "20.0.0.1";
+   public const string FileVersionDataAccessLayers = "20.0.0.3";
 
    // Leadtools.DataAccessLayers.Core
    public const string TitleDataAccessLayersCore1 = "Leadtools.DataAccessLayers.Core" + DllExt;
    public const string DescriptionDataAccessLayersCore1 = "Leadtools.DataAccessLayers.Core";
-   public const string FileVersionDataAccessLayersCore1 = "20.0.0.1";
+   public const string FileVersionDataAccessLayersCore1 = "20.0.0.2";
 
    // Leadtools.Medical.Options.DataAccessLayer.dll
    public const string TitleMedicalOptionsDataAccessLayer = "Leadtools.Medical.Options.DataAccessLayer" + DllExt;
@@ -885,7 +885,7 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.Rules.Addin.dll
    public const string TitleMedicalRulesAddin = "Leadtools.Medical.Rules.Addin" + DllExt;
    public const string DescriptionMedicalRulesAddin = "Leadtools.Medical.Rules.Addin";
-   public const string FileVersionMedicalRulesAddin = "20.0.0.2";
+   public const string FileVersionMedicalRulesAddin = "20.0.0.4";
 
    // Leadtools.Medical.DataAccessLayersCore
    public const string TitleDataAccessLayersCore = "Leadtools.Medical.DataAccessLayersCore" + DllExt;
@@ -895,17 +895,17 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.HL7MWL.AddIn
    public const string TitleMedicalHL7MWLAddIn = "Leadtools.Medical.HL7MWL.AddIn" + DllExt;
    public const string DescriptionMedicalHL7MWLAddIn = "Leadtools.Medical.HL7MWL.AddIn";
-   public const string FileVersionMedicalHL7MWLAddIn = "20.0.0.1";
+   public const string FileVersionMedicalHL7MWLAddIn = "20.0.0.8";
 
    // Leadtools.Medical.HL7PatientUpdate.AddIn
    public const string TitleMedicalHL7PatientUpdateAddIn = "Leadtools.Medical.HL7PatientUpdate.AddIn" + DllExt;
    public const string DescriptionMedicalHL7PatientUpdateAddIn = "Leadtools.Medical.HL7PatientUpdate.AddIn";
-   public const string FileVersionMedicalHL7PatientUpdateAddIn = "20.0.0.2";
+   public const string FileVersionMedicalHL7PatientUpdateAddIn = "20.0.0.10";
 
    // Leadtools.Medical.WebViewer.Addins
    public const string TitleMedicalWebViewerAddins = "Leadtools.Medical.WebViewer.Addins" + DllExt;
    public const string DescriptionMedicalWebViewerAddins = "Leadtools.Medical.WebViewer.Addins";
-   public const string FileVersionMedicalWebViewerAddins = "20.0.0.6";
+   public const string FileVersionMedicalWebViewerAddins = "20.0.0.22";
 
    // Leadtools.Medical.WebViewer.Annotations.DataAccessLayer
    public const string TitleMedicalWebViewerAnnotationsDataAccessLayer = "Leadtools.Medical.WebViewer.Annotations.DataAccessLayer" + DllExt;
@@ -915,7 +915,7 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.WebViewer.Core
    public const string TitleMedicalWebViewerCore = "Leadtools.Medical.WebViewer.Core" + DllExt;
    public const string DescriptionMedicalWebViewerCore = "Leadtools.Medical.WebViewer.Core";
-   public const string FileVersionMedicalWebViewerCore = "20.0.0.3";
+   public const string FileVersionMedicalWebViewerCore = "20.0.0.8";
 
    // Leadtools.Medical.WebViewer.Wado
    public const string TitleMedicalWebViewerWado = "Leadtools.Medical.WebViewer.Wado" + DllExt;
@@ -940,17 +940,17 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.WebViewer.PatientAccessRights.DataAccessAgent
    public const string TitleMedicalWebViewerPatientAccessRightsDataAccessAgent = "Leadtools.Medical.WebViewer.PatientAccessRights.DataAccessAgent" + DllExt;
    public const string DescriptionMedicalWebViewerPatientAccessRightsDataAccessAgent = "Leadtools.Medical.WebViewer.PatientAccessRights.DataAccessAgent";
-   public const string FileVersionMedicalWebViewerPatientAccessRightsDataAccessAgent = "20.0.0.3";
+   public const string FileVersionMedicalWebViewerPatientAccessRightsDataAccessAgent = "20.0.0.4";
 
    // Leadtools.Medical.WebViewer.WCF
    public const string TitleMedicalWebViewerWCF = "Leadtools.Medical.WebViewer.WCF" + DllExt;
    public const string DescriptionMedicalWebViewerWCF = "Leadtools.Medical.WebViewer.WCF";
-   public const string FileVersionMedicalWebViewerWCF = "20.0.0.6";
+   public const string FileVersionMedicalWebViewerWCF = "20.0.0.9";
 
    // Leadtools.Medical.WebViewer.Asp
    public const string TitleMedicalWebViewerAsp = "Leadtools.Medical.WebViewer.Asp" + DllExt;
    public const string DescriptionMedicalWebViewerAsp = "Leadtools.Medical.WebViewer.Asp";
-   public const string FileVersionMedicalWebViewerAsp = "20.0.0.7";
+   public const string FileVersionMedicalWebViewerAsp = "20.0.0.28";
 
    // Leadtools.Medical.WebViewer.IdP
    public const string TitleMedicalWebViewerIdP = "Leadtools.Medical.WebViewer.IdP" + DllExt;
@@ -1040,7 +1040,7 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.Security.AddIn.dll
    public const string TitleMedicalSecurityAddin = "Leadtools.Medical.Security.AddIn" + DllExt;
    public const string DescriptionMedicalSecurityAddin = "Leadtools.Medical.Security.AddIn";
-   public const string FileVersionMedicalSecurityAddin = "20.0.0.2";
+   public const string FileVersionMedicalSecurityAddin = "20.0.0.3";
 
    // Leadtools.Medical.PatientRestrict.AddIn.dll
    public const string TitleMedicalPatientRestrictAddIn = "Leadtools.Medical.PatientRestrict.AddIn" + DllExt;
@@ -1050,12 +1050,22 @@ partial struct AssemblyVersionNumber
    // Leadtools.Medical.ExportLayout.AddIn.dll
    public const string TitleMedicalExportLayoutAddIn = "Leadtools.Medical.ExportLayout.AddIn" + DllExt;
    public const string DescriptionMedicalExportLayoutAddIn = "Leadtools.Medical.ExportLayout.AddIn";
-   public const string FileVersionMedicalExportLayoutAddIn = "20.0.0.13";
+   public const string FileVersionMedicalExportLayoutAddIn = "20.0.0.33";
 
    // Leadtools.Medical.ExportLayout.DataAccessLayer.dll
    public const string TitleMedicalExportLayoutDataAccessLayer = "Leadtools.Medical.ExportLayout.DataAccessLayer" + DllExt;
    public const string DescriptionMedicalExportLayoutDataAccessLayer = "Leadtools.Medical.ExportLayout.DataAccessLayer";
-   public const string FileVersionMedicalExportLayoutDataAccessLayer = "20.0.0.2";
+   public const string FileVersionMedicalExportLayoutDataAccessLayer = "20.0.0.4";
+
+   // Leadtools.Medical.DicomImport.AddIn.dll
+   public const string TitleMedicalDicomImportAddIn = "Leadtools.Medical.DicomImport.AddIn" + DllExt;
+   public const string DescriptionMedicalDicomImportAddIn = "Leadtools.Medical.DicomImport.AddIn";
+   public const string FileVersionMedicalDicomImportAddIn = "20.0.0.15";
+
+   // Leadtools.Medical.HL7.DataAccessLayer.dll
+   public const string TitleMedicalHL7DataAccessLayer = "Leadtools.Medical.HL7.DataAccessLayer" + DllExt;
+   public const string DescriptionMedicalHL7DataAccessLayer = "Leadtools.Medical.HL7.DataAccessLayer";
+   public const string FileVersionMedicalHL7DataAccessLayer = "20.0.0.2";
 
 
    //*********************************************************************
@@ -1066,27 +1076,27 @@ partial struct AssemblyVersionNumber
    // DicomHighLevelClientDemo
    public const string TitleDicomHighLevelClientDemo = "DicomHighLevelClientDemo" + ExeExt;
    public const string DescriptionDicomHighLevelClientDemo = "DicomHighLevelClientDemo";
-   public const string FileVersionDicomHighLevelClientDemo = "20.0.0.12";
+   public const string FileVersionDicomHighLevelClientDemo = "20.0.0.16";
 
    // DicomHighLevelMwlScuDemo
    public const string TitleDicomHighLevelMwlScuDemo = "DicomHighLevelMwlScuDemo" + ExeExt;
    public const string DescriptionDicomHighLevelMwlScuDemo = "DicomHighLevelMwlScuDemo";
-   public const string FileVersionDicomHighLevelMwlScuDemo = "20.0.0.6";
+   public const string FileVersionDicomHighLevelMwlScuDemo = "20.0.0.7";
 
    // DicomHighlevelPatientUpdaterDemo
    public const string TitleDicomHighlevelPatientUpdaterDemo = "DicomHighlevelPatientUpdaterDemo" + ExeExt;
    public const string DescriptionDicomHighlevelPatientUpdaterDemo = "DicomHighlevelPatientUpdaterDemo";
-   public const string FileVersionDicomHighlevelPatientUpdaterDemo = "20.0.0.6";
+   public const string FileVersionDicomHighlevelPatientUpdaterDemo = "20.0.0.12";
 
    // DicomHighlevelStoreDemo
    public const string TitleDicomHighlevelStoreDemo = "DicomHighlevelStoreDemo" + ExeExt;
    public const string DescriptionDicomHighlevelStoreDemo = "DicomHighlevelStoreDemo";
-   public const string FileVersionDicomHighlevelStoreDemo = "20.0.0.8";
+   public const string FileVersionDicomHighlevelStoreDemo = "20.0.0.9";
 
    // Leadtools.Dicom.Server.Manager
    public const string TitleLeadtoolsDicomServerManager = "Leadtools.Dicom.Server.Manager" + ExeExt;
    public const string DescriptionLeadtoolsDicomServerManager = "Leadtools.Dicom.Server.Manager";
-   public const string FileVersionLeadtoolsDicomServerManager = "20.0.0.5";
+   public const string FileVersionLeadtoolsDicomServerManager = "20.0.0.6";
 
    // MedicalWorkstationMainDemo
    public const string TitleMedicalWorkstationMainDemo = "MedicalWorkstationMainDemo" + ExeExt;
@@ -1098,20 +1108,20 @@ partial struct AssemblyVersionNumber
    public const string DescriptionMedicalWorkstationDicomDirDemo = "MedicalWorkstationDicomDirDemo";
    public const string FileVersionMedicalWorkstationDicomDirDemo = "20.0.0.1";
 
-   // PacsConfigDemo
+   // CSPACSConfigDemo.exe
    public const string TitlePacsConfigDemo = "PacsConfigDemo" + ExeExt;
    public const string DescriptionPacsConfigDemo = "PacsConfigDemo";
-   public const string FileVersionPacsConfigDemo = "20.0.0.9";
+   public const string FileVersionPacsConfigDemo = "20.0.0.13";
 
-   // PacsDatabaseConfigurationDemo
+   // CSPacsDatabaseConfigurationDemo.exe
    public const string TitlePacsDatabaseConfigurationDemo = "PacsDatabaseConfigurationDemo" + ExeExt;
    public const string DescriptionPacsDatabaseConfigurationDemo = "PacsDatabaseConfigurationDemo";
-   public const string FileVersionPacsDatabaseConfigurationDemo = "20.0.0.20";
+   public const string FileVersionPacsDatabaseConfigurationDemo = "20.0.0.33";
 
-   // StorageServerManager
+   // CSStorageServerManager.exe
    public const string TitleStorageServerManager = "StorageServerManager" + ExeExt;
    public const string DescriptionStorageServerManager = "StorageServerManager";
-   public const string FileVersionStorageServerManager = "20.0.0.19";
+   public const string FileVersionStorageServerManager = "20.0.0.69";
 
    // CCowClientDemo
    public const string TitleCCowClientDemo = "CCowClientDemo" + ExeExt;
@@ -1133,10 +1143,10 @@ partial struct AssemblyVersionNumber
    public const string DescriptionExternalControlSample = "ExternalControlSample";
    public const string FileVersionExternalControlSample = "20.0.0.1";
 
-   // WebViewerConfiguration
+   // WebViewerConfiguration.exe
    public const string TitleWebViewerConfiguration = "WebViewerConfiguration" + ExeExt;
    public const string DescriptionWebViewerConfiguration = "WebViewerConfiguration";
-   public const string FileVersionWebViewerConfiguration = "20.0.0.46";
+   public const string FileVersionWebViewerConfiguration = "20.0.0.56";
 
    // ChangeMedicalViewerToDental
    public const string TitleChangeMedicalViewerToDental = "ChangeMedicalViewerToDental" + ExeExt;
@@ -1146,7 +1156,7 @@ partial struct AssemblyVersionNumber
    // LeadtoolsServicesHostManager
    public const string TitleLeadtoolsServicesHostManager = "LeadtoolsServicesHostManager" + ExeExt;
    public const string DescriptionLeadtoolsServicesHostManager = "LeadtoolsServicesHostManager";
-   public const string FileVersionLeadtoolsServicesHostManager = "20.0.0.14";
+   public const string FileVersionLeadtoolsServicesHostManager = "20.0.0.16";
 
    // Leadtools.Medical.ViewImage
    public const string TitleMedicalViewImage = "Leadtools.Medical.ViewImage" + DllExt;
@@ -1168,8 +1178,440 @@ partial struct AssemblyVersionNumber
    public const string DescriptionDicomAnnDemo = "DicomAnnDemo";
    public const string FileVersionDicomAnnDemo = "20.0.0.1";
 
+   // CSHL7Messaging.exe
+   public const string TitleHL7MessagingDemo = "CSHL7Messaging" + DllExt;
+   public const string DescriptionHL7MessagingDemo = "CSHL7Messaging";
+   public const string FileVersionHL7MessagingDemo = "20.0.0.4";
+
 #endif // LTV20_CONFIG
 
+#if  LTV21_CONFIG
+   public const string Culture = "";
+   public const string Product = ProductPrefix + Platform;
+
+#if FOR_DOTNET4
+   public const string Version = "21.0.4.0";
+#else
+   public const string Version                     = "21.0.0.0";
+#endif // FOR_DOTNET4
+
+   // Leadtools.Medical.Winforms.dll
+   public const string TitleMedicalWinforms = "Leadtools.Medical.WinForms" + DllExt;
+   public const string DescriptionMedicalWinforms = "Medical Windows Forms";
+   public const string FileVersionMedicalWinforms = "21.0.0.57";
+
+   // Leadtools.Medical.Ae.Configuration.dll
+   public const string TitleMedicalAeConfiguration = "Leadtools.Medical.Ae.Configuration" + DllExt;
+   public const string DescriptionMedicalAeConfiguration = "Leadtools.Medical.Ae.Configuration";
+   public const string FileVersionMedicalAeConfiguration = "21.0.0.1";
+
+   // Leadtools.Medical.AutoCopy.dll
+   public const string TitleMedicalAutoCopyAddin = "Leadtools.Medical.AutoCopy.AddIn" + DllExt;
+   public const string DescriptionMedicalAutoCopyAddin = "Leadtools.Medical.AutoCopy.AddIn";
+   public const string FileVersionMedicalAutoCopyAddin = "21.0.0.1";
+
+   // Leadtools.Medical.ExternalStore.AddIn.dll
+   public const string TitleMedicalExternalStoreAddin = "Leadtools.Medical.ExternalStore.AddIn" + DllExt;
+   public const string DescriptionMedicalExternalStoreAddin = "Leadtools.Medical.ExternalStore.AddIn";
+   public const string FileVersionMedicalExternalStoreAddin = "21.0.0.1";
+
+   // Leadtools.Medical.ExternalStore.Atmos.AddIn.dll
+   public const string TitleMedicalExternalStoreAtmosAddin = "Leadtools.Medical.ExternalStore.Atmos.AddIn" + DllExt;
+   public const string DescriptionMedicalExternalStoreAtmosAddin = "Leadtools.Medical.ExternalStore.Atmos.AddIn";
+   public const string FileVersionMedicalExternalStoreAtmosAddin = "21.0.0.1";
+
+   // Leadtools.Medical.ExternalStore.Azure.AddIn.dll
+   public const string TitleMedicalExternalStoreAzureAddin = "Leadtools.Medical.ExternalStore.Azure.AddIn" + DllExt;
+   public const string DescriptionMedicalExternalStoreAzureAddin = "Leadtools.Medical.ExternalStore.Azure.AddIn";
+   public const string FileVersionMedicalExternalStoreAzureAddin = "21.0.0.1";
+
+   // Leadtools.Medical.ExternalStore.AmazonS3.AddIn.dll
+   public const string TitleMedicalExternalStoreAmazonS3Addin = "Leadtools.Medical.ExternalStore.AmazonS3.AddIn" + DllExt;
+   public const string DescriptionMedicalExternalStoreAmazonS3Addin = "Leadtools.Medical.ExternalStore.AmazonS3.AddIn";
+   public const string FileVersionMedicalExternalStoreAmazonS3Addin = "21.0.0.1";
+
+   // Leadtools.Medical.ExternalStore.Sample.AddIn.dll
+   public const string TitleMedicalExternalStoreSampleAddin = "Leadtools.Medical.ExternalStore.Sample.AddIn" + DllExt;
+   public const string DescriptionMedicalExternalStoreSampleAddin = "Leadtools.Medical.ExternalStore.Sample.AddIn";
+   public const string FileVersionMedicalExternalStoreSampleAddin = "21.0.0.1";
+
+   // Leadtools.Medical.Forwarder.AddIn.dll
+   public const string TitleMedicalForwarderAddin = "Leadtools.Medical.Forwarder.AddIn" + DllExt;
+   public const string DescriptionMedicalForwarderAddin = "Leadtools.Medical.Forwarder.AddIn";
+   public const string FileVersionMedicalForwarderAddin = "21.0.0.1";
+
+   // Leadtools.Medical.Gateway.AddIn.dll
+   public const string TitleMedicalGatewayAddin = "Leadtools.Medical.Gateway.AddIn" + DllExt;
+   public const string DescriptionMedicalGatewayAddin = "Leadtools.Medical.Gateway.AddIn";
+   public const string FileVersionMedicalGatewayAddin = "21.0.0.1";
+
+   // Leadtools.Medical.License.Configuration.dll
+   public const string TitleMedicalLicenseConfiguration = "Leadtools.Medical.License.Configuration" + DllExt;
+   public const string DescriptionMedicalLicenseConfiguration = "Leadtools.Medical.License.Configuration";
+   public const string FileVersionMedicalLicenseConfiguration = "21.0.0.1";
+
+   // Leadtools.Medical.Logging.AddIn.dll
+   public const string TitleMedicalLoggingAddin = "Leadtools.Medical.Logging.AddIn" + DllExt;
+   public const string DescriptionMedicalLoggingAddin = "Leadtools.Medical.Logging.AddIn";
+   public const string FileVersionMedicalLoggingAddin = "21.0.0.1";
+
+   // Leadtools.Medical.Media.AddIns.dll
+   public const string TitleMedicalMediaAddin = "Leadtools.Medical.Media.AddIns" + DllExt;
+   public const string DescriptionMedicalMediaAddin = "Leadtools.Medical.Media.AddIns";
+   public const string FileVersionMedicalMediaAddin = "21.0.0.1";
+
+   // Leadtools.Medical.PatientUpdater.AddIn
+   public const string TitleMedicalPatientUpdaterAddin = "Leadtools.Medical.PatientUpdater.AddIn" + DllExt;
+   public const string DescriptionMedicalPatientUpdaterAddin = "Leadtools.Medical.PatientUpdater.AddIn";
+   public const string FileVersionMedicalPatientUpdaterAddin = "21.0.0.1";
+
+   // Leadtools.Medical.Storage.AddIns.dll
+   public const string TitleMedicalStorageAddin = "Leadtools.Medical.Storage.AddIns" + DllExt;
+   public const string DescriptionMedicalStorageAddin = "Leadtools.Medical.Storage.AddIns";
+   public const string FileVersionMedicalStorageAddin = "21.0.0.2";
+
+   // Leadtools.Medical.Worklist.AddIns.dll
+   public const string TitleMedicalWorklistAddin = "Leadtools.Medical.Worklist.AddIns" + DllExt;
+   public const string DescriptionMedicalWorklistAddin = "Leadtools.Medical.Worklist.AddIns";
+   public const string FileVersionMedicalWorklistAddin = "21.0.0.1";
+
+   // Leadtools.Medical.AeManagement.DataAccessLayer.dll
+   public const string TitleMedicalAeManagementDataAccessLayer = "Leadtools.Medical.AeManagement.DataAccessLayer" + DllExt;
+   public const string DescriptionAeManagementDataAccessLayer = "Leadtools.Medical.AeManagement.DataAccessLayer";
+   public const string FileVersionAeManagementDataAccessLayer = "21.0.0.2";
+
+   // Leadtools.Medical.Forward.DataAccessLayer.dll
+   public const string TitleMedicalForwardDataAccessLayer = "Leadtools.Medical.Forward.DataAccessLayer" + DllExt;
+   public const string DescriptionMedicalForwardDataAccessLayer = "Leadtools.Medical.Forward.DataAccessLayer";
+   public const string FileVersionMedicalForwardDataAccessLayer = "21.0.0.1";
+
+   // Leadtools.DataAccessLayers.dll
+   public const string TitleDataAccessLayers = "Leadtools.DataAccessLayers" + DllExt;
+   public const string DescriptionDataAccessLayers = "Leadtools.DataAccessLayers";
+   public const string FileVersionDataAccessLayers = "21.0.0.2";
+
+   // Leadtools.DataAccessLayers.Core
+   public const string TitleDataAccessLayersCore1 = "Leadtools.DataAccessLayers.Core" + DllExt;
+   public const string DescriptionDataAccessLayersCore1 = "Leadtools.DataAccessLayers.Core";
+   public const string FileVersionDataAccessLayersCore1 = "21.0.0.1";
+
+   // Leadtools.Medical.Options.DataAccessLayer.dll
+   public const string TitleMedicalOptionsDataAccessLayer = "Leadtools.Medical.Options.DataAccessLayer" + DllExt;
+   public const string DescriptionMedicalOptionsDataAccessLayer = "Leadtools.Medical.Options.DataAccessLayer";
+   public const string FileVersionMedicalOptionsDataAccessLayer = "21.0.0.1";
+
+   // Leadtools.Medical.PermissionsManagement.DataAccessLayer.dll
+   public const string TitleMedicalPermissionsManagementDataAccessLayer = "Leadtools.Medical.PermissionsManagement.DataAccessLayer" + DllExt;
+   public const string DescriptionMedicalPermissionsManagementDataAccessLayer = "Leadtools.Medical.PermissionsManagement.DataAccessLayer";
+   public const string FileVersionMedicalPermissionsManagementDataAccessLayer = "21.0.0.1";
+
+   // Leadtools.Medical.UserManagementDataAccessLayer.dll
+   public const string TitleMedicalUserManagementDataAccessLayer = "Leadtools.Medical.UserManagementDataAccessLayer" + DllExt;
+   public const string DescriptionMedicalUserManagementDataAccessLayer = "Leadtools.Medical.UserManagementDataAccessLayer";
+   public const string FileVersionMedicalUserManagementDataAccessLayer = "21.0.0.1";
+
+   // Leadtools.Medical.Rules.Addin.dll
+   public const string TitleMedicalRulesAddin = "Leadtools.Medical.Rules.Addin" + DllExt;
+   public const string DescriptionMedicalRulesAddin = "Leadtools.Medical.Rules.Addin";
+   public const string FileVersionMedicalRulesAddin = "21.0.0.1";
+
+   // Leadtools.Medical.DataAccessLayersCore
+   public const string TitleDataAccessLayersCore = "Leadtools.Medical.DataAccessLayersCore" + DllExt;
+   public const string DescriptionDataAccessLayersCore = "Leadtools.Medical.DataAccessLayersCore";
+   public const string FileVersionDataAccessLayersCore = "21.0.0.1";
+
+   // Leadtools.Medical.HL7MWL.AddIn
+   public const string TitleMedicalHL7MWLAddIn = "Leadtools.Medical.HL7MWL.AddIn" + DllExt;
+   public const string DescriptionMedicalHL7MWLAddIn = "Leadtools.Medical.HL7MWL.AddIn";
+   public const string FileVersionMedicalHL7MWLAddIn = "21.0.0.4";
+
+   // Leadtools.Medical.HL7PatientUpdate.AddIn
+   public const string TitleMedicalHL7PatientUpdateAddIn = "Leadtools.Medical.HL7PatientUpdate.AddIn" + DllExt;
+   public const string DescriptionMedicalHL7PatientUpdateAddIn = "Leadtools.Medical.HL7PatientUpdate.AddIn";
+   public const string FileVersionMedicalHL7PatientUpdateAddIn = "21.0.0.4";
+
+   // Leadtools.Medical.WebViewer.Addins
+   public const string TitleMedicalWebViewerAddins = "Leadtools.Medical.WebViewer.Addins" + DllExt;
+   public const string DescriptionMedicalWebViewerAddins = "Leadtools.Medical.WebViewer.Addins";
+   public const string FileVersionMedicalWebViewerAddins = "21.0.0.1";
+
+   // Leadtools.Medical.WebViewer.Annotations.DataAccessLayer
+   public const string TitleMedicalWebViewerAnnotationsDataAccessLayer = "Leadtools.Medical.WebViewer.Annotations.DataAccessLayer" + DllExt;
+   public const string DescriptionMedicalWebViewerAnnotationsDataAccessLayer = "Leadtools.Medical.WebViewer.Annotations.DataAccessLayer";
+   public const string FileVersionMedicalWebViewerAnnotationsDataAccessLayer = "21.0.0.1";
+
+   // Leadtools.Medical.WebViewer.Core
+   public const string TitleMedicalWebViewerCore = "Leadtools.Medical.WebViewer.Core" + DllExt;
+   public const string DescriptionMedicalWebViewerCore = "Leadtools.Medical.WebViewer.Core";
+   public const string FileVersionMedicalWebViewerCore = "21.0.0.1";
+
+   // Leadtools.Medical.WebViewer.Wado
+   public const string TitleMedicalWebViewerWado = "Leadtools.Medical.WebViewer.Wado" + DllExt;
+   public const string DescriptionMedicalWebViewerWado = "Leadtools.Medical.WebViewer.Wado";
+   public const string FileVersionMedicalWebViewerWado = "21.0.0.1";
+
+   // Leadtools.Medical.WebViewer.ImageDownloadAddin
+   public const string TitleMedicalWebViewerImageDownloadAddin = "Leadtools.Medical.WebViewer.ImageDownloadAddin" + DllExt;
+   public const string DescriptionMedicalWebViewerImageDownloadAddin = "Leadtools.Medical.WebViewer.ImageDownloadAddin";
+   public const string FileVersionMedicalWebViewerImageDownloadAddin = "21.0.0.1";
+
+   // Leadtools.Medical.WebViewer.Jobs
+   public const string TitleMedicalWebViewerJobs = "Leadtools.Medical.WebViewer.Jobs" + DllExt;
+   public const string DescriptionMedicalWebViewerJobs = "Leadtools.Medical.WebViewer.Jobs";
+   public const string FileVersionMedicalWebViewerJobs = "21.0.0.1";
+
+   // Leadtools.Medical.WebViewer.JobsCleanupAddin.dll
+   public const string TitleMedicalWebViewerJobsCleanupAddin = "Leadtools.Medical.WebViewer.JobsCleanupAddin" + DllExt;
+   public const string DescriptionMedicalWebViewerJobsCleanupAddin = "Leadtools.Medical.WebViewer.JobsCleanupAddin";
+   public const string FileVersionMedicalWebViewerJobsCleanupAddin = "21.0.0.1";
+
+   // Leadtools.Medical.WebViewer.PatientAccessRights.DataAccessAgent
+   public const string TitleMedicalWebViewerPatientAccessRightsDataAccessAgent = "Leadtools.Medical.WebViewer.PatientAccessRights.DataAccessAgent" + DllExt;
+   public const string DescriptionMedicalWebViewerPatientAccessRightsDataAccessAgent = "Leadtools.Medical.WebViewer.PatientAccessRights.DataAccessAgent";
+   public const string FileVersionMedicalWebViewerPatientAccessRightsDataAccessAgent = "21.0.0.1";
+
+   // Leadtools.Medical.WebViewer.WCF
+   public const string TitleMedicalWebViewerWCF = "Leadtools.Medical.WebViewer.WCF" + DllExt;
+   public const string DescriptionMedicalWebViewerWCF = "Leadtools.Medical.WebViewer.WCF";
+   public const string FileVersionMedicalWebViewerWCF = "21.0.0.1";
+
+   // Leadtools.Medical.WebViewer.Asp
+   public const string TitleMedicalWebViewerAsp = "Leadtools.Medical.WebViewer.Asp" + DllExt;
+   public const string DescriptionMedicalWebViewerAsp = "Leadtools.Medical.WebViewer.Asp";
+   public const string FileVersionMedicalWebViewerAsp = "21.0.0.1";
+
+   // Leadtools.Medical.WebViewer.IdP
+   public const string TitleMedicalWebViewerIdP = "Leadtools.Medical.WebViewer.IdP" + DllExt;
+   public const string DescriptionMedicalWebViewerIdP = "Leadtools.Medical.WebViewer.IdP";
+   public const string FileVersionMedicalWebViewerIdP = "21.0.0.1";
+
+   // Leadtools.Medical.WebViewer.ExternalControl
+   public const string TitleMedicalWebViewerExternalControl = "Leadtools.Medical.WebViewer.ExternalControl" + DllExt;
+   public const string DescriptionMedicalWebViewerExternalControl = "Leadtools.Medical.WebViewer.ExternalControl";
+   public const string FileVersionMedicalWebViewerExternalControl = "21.0.0.1";
+
+   // Leadtools.MedicalViewer.CS.WebForms
+   public const string TitleMedicalViewerCSWebForms = "MedicalViewer.CS.WebForms" + DllExt;
+   public const string DescriptionMedicalViewerCSWebForms = "MedicalViewer.CS.WebForms";
+   public const string FileVersionMedicalViewerCSWebForms = "21.0.0.1";
+
+   // Leadtools.Medical.SearchOtherPatientIDs.Addin.dll 
+   public const string TitleMedicalSearchOtherPatientIdsAddin = "Leadtools.Medical.SearchOtherPatientIDs.Addin" + DllExt;
+   public const string DescriptionMedicalSearchOtherPatientIdsAddin = "Leadtools.Medical.SearchOtherPatientIDs.Addin";
+   public const string FileVersionMedicalSearchOtherPatientIdsAddin = "21.0.0.1";
+
+   // Leadtools.Windows.Annotations.dll
+   public const string TitleAnnotationsWinForms = "Leadtools.Windows.Annotations" + DllExt;
+   public const string DescriptionAnnotationsWinForms = "Leadtools.Windows.Annotations";
+   public const string FileVersionAnnotationsWinForms = "21.0.0.1";
+
+   // Leadtools.SDCreator.dll
+   public const string TitleLeadtoolsSDCreator = "Leadtools.SDCreator" + DllExt;
+   public const string DescriptionLeadtoolsSDCreator = "Automatically converts Dental Images with anatomic information to a structured display dataset";
+   public const string FileVersionLeadtoolsSDCreator = "21.0.0.1";
+
+   // Leadtools.AddIn.Find.dll
+   public const string TitleLeadtoolsAddInFind = "Leadtools.AddIn.Find" + DllExt;
+   public const string DescriptionLeadtoolsAddInFind = "Leadtools.AddIn.Find";
+   public const string FileVersionLeadtoolsAddInFind = "21.0.0.1";
+
+   // Leadtools.AddIn.Move.dll
+   public const string TitleLeadtoolsAddInMove = "Leadtools.AddIn.Move" + DllExt;
+   public const string DescriptionLeadtoolsAddInMove = "Leadtools.AddIn.Move";
+   public const string FileVersionLeadtoolsAddInMove = "21.0.0.1";
+
+   // Leadtools.AddIn.Security.dll
+   public const string TitleLeadtoolsAddInSecurity = "Leadtools.AddIn.Security" + DllExt;
+   public const string DescriptionLeadtoolsAddInSecurity = "Leadtools.AddIn.Security";
+   public const string FileVersionLeadtoolsAddInSecurity = "21.0.0.1";
+
+   // Leadtools.AddIn.StorageCommit.dll
+   public const string TitleLeadtoolsAddInStorageCommit = "Leadtools.AddIn.StorageCommit" + DllExt;
+   public const string DescriptionLeadtoolsAddInStorageCommit = "Leadtools.AddIn.StorageCommit";
+   public const string FileVersionLeadtoolsAddInStorageCommit = "21.0.0.1";
+
+   // Leadtools.AddIn.Store.dll
+   public const string TitleLeadtoolsAddInStore = "Leadtools.AddIn.Store" + DllExt;
+   public const string DescriptionLeadtoolsAddInStore = "Leadtools.AddIn.Store";
+   public const string FileVersionLeadtoolsAddInStore = "21.0.0.1";
+
+   // Leadtools.Configuration.Logging.dll
+   public const string TitleLeadtoolsConfigurationLogging = "Leadtools.Configuration.Logging" + DllExt;
+   public const string DescriptionLeadtoolsConfigurationLogging = "Leadtools.Configuration.Logging";
+   public const string FileVersionLeadtoolsConfigurationLogging = "21.0.0.1";
+
+   // Leadtools.AddIn.AutoConfigure.dll
+   public const string TitleLeadtoolsAddInAutoConfigure = "Leadtools.AddIn.AutoConfigure" + DllExt;
+   public const string DescriptionLeadtoolsAddInAutoConfigure = "Leadtools.AddIn.AutoConfigure";
+   public const string FileVersionLeadtoolsAddInAutoConfigure = "21.0.0.1";
+
+   // Leadtools.AddIn.MWLFind.dll
+   public const string TitleLeadtoolsAddInMWLFind = "Leadtools.AddIn.MWLFind" + DllExt;
+   public const string DescriptionLeadtoolsAddInMWLFind = "Leadtools.AddIn.MWLFind";
+   public const string FileVersionLeadtoolsAddInMWLFind = "21.0.0.1";
+
+   // Leadtools.AddIn.DicomLog.dll
+   public const string TitleLeadtoolsAddInDicomLog = "Leadtools.AddIn.DicomLog" + DllExt;
+   public const string DescriptionLeadtoolsAddInDicomLog = "Leadtools.AddIn.DicomLog";
+   public const string FileVersionLeadtoolsAddInDicomLog = "21.0.0.1";
+
+   // Leadtools.AddIn.Performance.dll
+   public const string TitleLeadtoolsAddInPerformance = "Leadtools.AddIn.Performance" + DllExt;
+   public const string DescriptionLeadtoolsAddInPerformance = "Leadtools.AddIn.Performance";
+   public const string FileVersionLeadtoolsAddInPerformance = "21.0.0.1";
+
+   // Leadtools.AddIn.Sample.Events.dll
+   public const string TitleLeadtoolsAddInSampleEvents = "Leadtools.AddIn.Sample.Events" + DllExt;
+   public const string DescriptionLeadtoolsAddInSampleEvents = "Leadtools.AddIn.Sample.Events";
+   public const string FileVersionLeadtoolsAddInSampleEvents = "21.0.0.1";
+
+   // Leadtools.Medical.Security.AddIn.dll
+   public const string TitleMedicalSecurityAddin = "Leadtools.Medical.Security.AddIn" + DllExt;
+   public const string DescriptionMedicalSecurityAddin = "Leadtools.Medical.Security.AddIn";
+   public const string FileVersionMedicalSecurityAddin = "21.0.0.1";
+
+   // Leadtools.Medical.PatientRestrict.AddIn.dll
+   public const string TitleMedicalPatientRestrictAddIn = "Leadtools.Medical.PatientRestrict.AddIn" + DllExt;
+   public const string DescriptionMedicalPatientRestrictAddIn = "Leadtools.Medical.PatientRestrict.AddIn";
+   public const string FileVersionMedicalPatientRestrictAddIn = "21.0.0.1";
+
+   // Leadtools.Medical.ExportLayout.AddIn.dll
+   public const string TitleMedicalExportLayoutAddIn = "Leadtools.Medical.ExportLayout.AddIn" + DllExt;
+   public const string DescriptionMedicalExportLayoutAddIn = "Leadtools.Medical.ExportLayout.AddIn";
+   public const string FileVersionMedicalExportLayoutAddIn = "21.0.0.4";
+
+   // Leadtools.Medical.ExportLayout.DataAccessLayer.dll
+   public const string TitleMedicalExportLayoutDataAccessLayer = "Leadtools.Medical.ExportLayout.DataAccessLayer" + DllExt;
+   public const string DescriptionMedicalExportLayoutDataAccessLayer = "Leadtools.Medical.ExportLayout.DataAccessLayer";
+   public const string FileVersionMedicalExportLayoutDataAccessLayer = "21.0.0.2";
+
+   // Leadtools.Medical.DicomImport.AddIn.dll
+   public const string TitleMedicalDicomImportAddIn = "Leadtools.Medical.DicomImport.AddIn" + DllExt;
+   public const string DescriptionMedicalDicomImportAddIn = "Leadtools.Medical.DicomImport.AddIn";
+   public const string FileVersionMedicalDicomImportAddIn = "21.0.0.1";
+
+   // Leadtools.Medical.HL7.DataAccessLayer.dll
+   public const string TitleMedicalHL7DataAccessLayer = "Leadtools.Medical.HL7.DataAccessLayer" + DllExt;
+   public const string DescriptionMedicalHL7DataAccessLayer = "Leadtools.Medical.HL7.DataAccessLayer";
+   public const string FileVersionMedicalHL7DataAccessLayer = "21.0.0.1";
+
+
+   //*********************************************************************
+   //
+   // Demo EXE
+   //
+   //*********************************************************************
+   // DicomHighLevelClientDemo
+   public const string TitleDicomHighLevelClientDemo = "DicomHighLevelClientDemo" + ExeExt;
+   public const string DescriptionDicomHighLevelClientDemo = "DicomHighLevelClientDemo";
+   public const string FileVersionDicomHighLevelClientDemo = "21.0.0.1";
+
+   // DicomHighLevelMwlScuDemo
+   public const string TitleDicomHighLevelMwlScuDemo = "DicomHighLevelMwlScuDemo" + ExeExt;
+   public const string DescriptionDicomHighLevelMwlScuDemo = "DicomHighLevelMwlScuDemo";
+   public const string FileVersionDicomHighLevelMwlScuDemo = "21.0.0.1";
+
+   // DicomHighlevelPatientUpdaterDemo
+   public const string TitleDicomHighlevelPatientUpdaterDemo = "DicomHighlevelPatientUpdaterDemo" + ExeExt;
+   public const string DescriptionDicomHighlevelPatientUpdaterDemo = "DicomHighlevelPatientUpdaterDemo";
+   public const string FileVersionDicomHighlevelPatientUpdaterDemo = "21.0.0.1";
+
+   // DicomHighlevelStoreDemo
+   public const string TitleDicomHighlevelStoreDemo = "DicomHighlevelStoreDemo" + ExeExt;
+   public const string DescriptionDicomHighlevelStoreDemo = "DicomHighlevelStoreDemo";
+   public const string FileVersionDicomHighlevelStoreDemo = "21.0.0.1";
+
+   // Leadtools.Dicom.Server.Manager
+   public const string TitleLeadtoolsDicomServerManager = "Leadtools.Dicom.Server.Manager" + ExeExt;
+   public const string DescriptionLeadtoolsDicomServerManager = "Leadtools.Dicom.Server.Manager";
+   public const string FileVersionLeadtoolsDicomServerManager = "21.0.0.2";
+
+   // MedicalWorkstationMainDemo
+   public const string TitleMedicalWorkstationMainDemo = "MedicalWorkstationMainDemo" + ExeExt;
+   public const string DescriptionMedicalWorkstationMainDemo = "MedicalWorkstationMainDemo";
+   public const string FileVersionMedicalWorkstationMainDemo = "21.0.0.1";
+
+   // MedicalWorkstationDicomDirDemo
+   public const string TitleMedicalWorkstationDicomDirDemo = "MedicalWorkstationDicomDirDemo" + ExeExt;
+   public const string DescriptionMedicalWorkstationDicomDirDemo = "MedicalWorkstationDicomDirDemo";
+   public const string FileVersionMedicalWorkstationDicomDirDemo = "21.0.0.1";
+
+   // CSPACSConfigDemo.exe
+   public const string TitlePacsConfigDemo = "PacsConfigDemo" + ExeExt;
+   public const string DescriptionPacsConfigDemo = "PacsConfigDemo";
+   public const string FileVersionPacsConfigDemo = "21.0.0.5";
+
+   // CSPacsDatabaseConfigurationDemo.exe
+   public const string TitlePacsDatabaseConfigurationDemo = "PacsDatabaseConfigurationDemo" + ExeExt;
+   public const string DescriptionPacsDatabaseConfigurationDemo = "PacsDatabaseConfigurationDemo";
+   public const string FileVersionPacsDatabaseConfigurationDemo = "21.0.0.33";
+
+   // CSStorageServerManager.exe
+   public const string TitleStorageServerManager = "StorageServerManager" + ExeExt;
+   public const string DescriptionStorageServerManager = "StorageServerManager";
+   public const string FileVersionStorageServerManager = "21.0.0.69";
+
+   // CCowClientDemo
+   public const string TitleCCowClientDemo = "CCowClientDemo" + ExeExt;
+   public const string DescriptionCCowClientDemo = "CCowClientDemo";
+   public const string FileVersionCCowClientDemo = "21.0.0.1";
+
+   // ModalityWorklistWCFDemo
+   public const string TitleModalityWorklistWCFDemo = "ModalityWorklistWCFDemo" + ExeExt;
+   public const string DescriptionModalityWorklistWCFDemo = "ModalityWorklistWCFDemo";
+   public const string FileVersionModalityWorklistWCFDemo = "21.0.0.1";
+
+   // MPPSWCFDemo
+   public const string TitleMPPSWCFDemo = "MPPSWCFDemo" + ExeExt;
+   public const string DescriptionMPPSWCFDemo = "MPPSWCFDemo";
+   public const string FileVersionMPPSWCFDemo = "21.0.0.1";
+
+   // ExternalControlSample
+   public const string TitleExternalControlSample = "ExternalControlSample" + ExeExt;
+   public const string DescriptionExternalControlSample = "ExternalControlSample";
+   public const string FileVersionExternalControlSample = "21.0.0.1";
+
+   // WebViewerConfiguration.exe
+   public const string TitleWebViewerConfiguration = "WebViewerConfiguration" + ExeExt;
+   public const string DescriptionWebViewerConfiguration = "WebViewerConfiguration";
+   public const string FileVersionWebViewerConfiguration = "21.0.0.6";
+
+   // ChangeMedicalViewerToDental
+   public const string TitleChangeMedicalViewerToDental = "ChangeMedicalViewerToDental" + ExeExt;
+   public const string DescriptionChangeMedicalViewerToDental = "ChangeMedicalViewerToDental";
+   public const string FileVersionChangeMedicalViewerToDental = "21.0.0.1";
+
+   // LeadtoolsServicesHostManager
+   public const string TitleLeadtoolsServicesHostManager = "LeadtoolsServicesHostManager" + ExeExt;
+   public const string DescriptionLeadtoolsServicesHostManager = "LeadtoolsServicesHostManager";
+   public const string FileVersionLeadtoolsServicesHostManager = "21.0.0.3";
+
+   // Leadtools.Medical.ViewImage
+   public const string TitleMedicalViewImage = "Leadtools.Medical.ViewImage" + DllExt;
+   public const string DescriptionMedicalViewImage = "Leadtools.Medical.ViewImage";
+   public const string FileVersionMedicalViewImage = "21.0.0.1";
+
+   // CSMedicalMainMenu.exe
+   public const string TitleMedicalMainMenu = "MedicalMainMenu" + DllExt;
+   public const string DescriptionMedicalMainMenu = "MedicalMainMenu";
+   public const string FileVersionMedicalMainMenu = "21.0.0.1";
+
+   // CSDicomDemo.exe
+   public const string TitleDicomDemo  = "DicomDemo" + DllExt;
+   public const string DescriptionDicomDemo = "DicomDemo";
+   public const string FileVersionDicomDemo = "21.0.0.2";
+
+   // CSDicomAnnDemo.exe
+   public const string TitleDicomAnnDemo = "DicomAnnDemo" + DllExt;
+   public const string DescriptionDicomAnnDemo = "DicomAnnDemo";
+   public const string FileVersionDicomAnnDemo = "21.0.0.1";
+
+   // CSHL7Messaging.exe
+   public const string TitleHL7MessagingDemo = "CSHL7Messaging" + DllExt;
+   public const string DescriptionHL7MessagingDemo = "CSHL7Messaging";
+   public const string FileVersionHL7MessagingDemo = "21.0.0.4";
+
+#endif // LTV21_CONFIG
 
     /*
     // Leadtools.Xxxxxx.dll

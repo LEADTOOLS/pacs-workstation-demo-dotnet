@@ -1,5 +1,5 @@
 ﻿// *************************************************************
-// Copyright (c) 1991-2019 LEAD Technologies, Inc.              
+// Copyright (c) 1991-2020 LEAD Technologies, Inc.              
 // All Rights Reserved.                                         
 // *************************************************************
 using System;
@@ -129,7 +129,7 @@ namespace Leadtools.Demos
             platform = "32";
          else
             platform = "64";
-         _tb1.Text = string.Format("LEADTOOLS .NET C# {0} Demo {1}{2}{2}{2}Copyright © 1991-2019 ALL RIGHTS RESERVED.{2}LEAD Technologies, Inc.", _demoName, platform, Environment.NewLine);
+         _tb1.Text = string.Format("LEADTOOLS .NET C# {0} Demo {1}{2}{2}{2}Copyright © 1991-2020 ALL RIGHTS RESERVED.{2}LEAD Technologies, Inc.", _demoName, platform, Environment.NewLine);
          CenterToParent();
       }
 

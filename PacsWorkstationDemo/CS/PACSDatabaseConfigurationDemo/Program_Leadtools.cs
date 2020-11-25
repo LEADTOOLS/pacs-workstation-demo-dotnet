@@ -1,5 +1,5 @@
 ﻿// *************************************************************
-// Copyright (c) 1991-2019 LEAD Technologies, Inc.              
+// Copyright (c) 1991-2020 LEAD Technologies, Inc.              
 // All Rights Reserved.                                         
 // *************************************************************
 using System;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Security.Principal;
 using System.Diagnostics;
-using MedicalWorkstationConfigurationDemo.UI ;
+using MedicalWorkstationConfigurationDemo.UI;
 using Leadtools.Demos;
 using Leadtools.Dicom;
 using System.Drawing;
@@ -52,7 +52,7 @@ namespace MedicalWorkstationConfigurationDemo
             "Admin",
             "PatientUpdaterEdit",
             "PatientUpdaterDelete",
-            "PatientUpdaterAdmin", 
+            "PatientUpdaterAdmin",
             "CanDeleteFromDatabase",
             "CanChangeServerSettings",
             "CanEmptyDatabase",
@@ -126,64 +126,22 @@ namespace MedicalWorkstationConfigurationDemo
 
       public static void InsertDefaultImages(string prefix, int max, Configuration configuration)
       {
-         InsertDefaultImages(prefix, max, 0, configuration);
-      }
-
-      public static void InsertDefaultImages(string prefix, int max, int padding, Configuration configuration)
-      {
-          MedicalWorkstationConfigurationDemo.UI.MainForm.StoreClientSessionProxy proxy = null;
-          InstanceCStoreCommand cmd = null;
-          IStorageDataAccessAgent agent = DataAccessFactory.GetInstance(new StorageDataAccessConfigurationView(configuration, DicomDemoSettingsManager.ProductNameStorageServer, null)).CreateDataAccessAgent<IStorageDataAccessAgent>();
-
-          string formatString = BuildDefaultImageFormatString(padding);
-          for (int i = 1; i < max+1; i++)
-          {
-              using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(string.Format(formatString, prefix, i)))
-              {
-                  using (DicomDataSet ds = new DicomDataSet())
-                  {
-                      ds.Load(stream, DicomDataSetLoadFlags.None);
-
-                      proxy = new MedicalWorkstationConfigurationDemo.UI.MainForm.StoreClientSessionProxy();
-                      cmd = new InstanceCStoreCommand(proxy, ds, agent);
-
-                      proxy.AffectedSOPInstance = ds.GetValue<string>(DicomTag.SOPInstanceUID, string.Empty);
-                      proxy.AbstractClass = ds.GetValue<string>(DicomTag.SOPClassUID, string.Empty);
-
-                      ds.InsertElementAndSetValue(DicomTag.MediaStorageSOPInstanceUID, proxy.AffectedSOPInstance);
-                      cmd.Execute();
-                      ImageCountUpdate();
-               }
-            }
-          }
-      }
-
-      const int ImageCountResources = 2;
-      const int ImageCountMG = 4;
-      const int ImageCountCR = 2;
-      const int ImageCountFMX = 18;
-      const int ImageCountMRI = 46;
-      const int TotalImageCount = ImageCountResources + ImageCountMG + ImageCountCR + ImageCountFMX + ImageCountMRI;
-
-      private static int _currentImageCount = 0;
-
-      public static void AddDefaultImages(Configuration configGlobalPacs)
-      {
-         ImageCountReset();
-
-         MainForm.StoreClientSessionProxy proxy = null;
+         MedicalWorkstationConfigurationDemo.UI.MainForm.StoreClientSessionProxy proxy = null;
          InstanceCStoreCommand cmd = null;
-         IStorageDataAccessAgent agent = DataAccessFactory.GetInstance(new StorageDataAccessConfigurationView(configGlobalPacs, DicomDemoSettingsManager.ProductNameStorageServer, null)).CreateDataAccessAgent<IStorageDataAccessAgent>();
+         IStorageDataAccessAgent agent = DataAccessFactory.GetInstance(new StorageDataAccessConfigurationView(configuration, DicomDemoSettingsManager.ProductNameStorageServer, null)).CreateDataAccessAgent<IStorageDataAccessAgent>();
 
-         for (int i = 1; i < ImageCountResources+1; i++)
+         string formatString = Path.Combine(DemosGlobal.ImagesFolder, prefix);
+         for (int i = 1; i < max + 1; i++)
          {
-            using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(string.Format("CSPacsDatabaseConfigurationDemo.Resources.{0}.dcm", i)))
+            using (DicomDataSet ds = new DicomDataSet())
             {
-               using (DicomDataSet ds = new DicomDataSet())
-               {
-                  ds.Load(stream, DicomDataSetLoadFlags.None);
+               string fileName = string.Format(formatString, i);
 
-                  proxy = new MainForm.StoreClientSessionProxy();
+               if (File.Exists(fileName))
+               {
+                  ds.Load(fileName, DicomDataSetLoadFlags.None);
+
+                  proxy = new MedicalWorkstationConfigurationDemo.UI.MainForm.StoreClientSessionProxy();
                   cmd = new InstanceCStoreCommand(proxy, ds, agent);
 
                   proxy.AffectedSOPInstance = ds.GetValue<string>(DicomTag.SOPInstanceUID, string.Empty);
@@ -191,20 +149,30 @@ namespace MedicalWorkstationConfigurationDemo
 
                   ds.InsertElementAndSetValue(DicomTag.MediaStorageSOPInstanceUID, proxy.AffectedSOPInstance);
                   cmd.Execute();
-
                   ImageCountUpdate();
                }
             }
          }
-#if(LEADTOOLS_V19_OR_LATER)
-        InsertDefaultImages("mg", ImageCountMG, configGlobalPacs);
-        InsertDefaultImages("cr", ImageCountCR, configGlobalPacs);
-        InsertDefaultImages("FMX18.de", ImageCountFMX, 2, configGlobalPacs);
-#endif
+      }
 
-#if (LEADTOOLS_V20_OR_LATER)
-         InsertDefaultImages("MRI.mri_", ImageCountMRI, 2, configGlobalPacs);
-#endif
+      const int ImageCountFoot = 2;
+      const int ImageCountMG = 4;
+      const int ImageCountCR = 2;
+      const int ImageCountFMX = 18;
+      const int ImageCountHead = 483;
+      public const int TotalImageCount = ImageCountFoot + ImageCountMG + ImageCountCR + ImageCountFMX + ImageCountHead;
+
+      private static int _currentImageCount = 0;
+
+      public static void AddDefaultImages(Configuration configGlobalPacs)
+      {
+         ImageCountReset();
+
+         InsertDefaultImages(@"DICOM\CR\foot{0:0}.dcm", ImageCountFoot, configGlobalPacs);
+         InsertDefaultImages(@"DICOM\MG\mg{0:0}.dcm", ImageCountMG, configGlobalPacs);
+         InsertDefaultImages(@"DICOM\CR\cr{0:0}.dcm", ImageCountCR, configGlobalPacs);
+         InsertDefaultImages(@"DICOM\FMX18\de{0:00}.dcm", ImageCountFMX, configGlobalPacs);
+         InsertDefaultImages(@"DICOM\HeadCBCT\CT\CT_{0:000}", ImageCountHead, configGlobalPacs);
       }
    }
 }

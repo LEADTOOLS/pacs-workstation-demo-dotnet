@@ -1,5 +1,5 @@
 ﻿// *************************************************************
-// Copyright (c) 1991-2019 LEAD Technologies, Inc.              
+// Copyright (c) 1991-2020 LEAD Technologies, Inc.              
 // All Rights Reserved.                                         
 // *************************************************************
 using System;
@@ -79,7 +79,8 @@ namespace MedicalWorkstationConfigurationDemo
          }
 
          VersionSqlInstaller.CreateVersionTable(connection, transaction);
-         VersionSqlInstaller.InsertVersionTable(connection, transaction, ConfigurationData.DataAccessLayerVersionNames.Worklist, 1, 1);
+         VersionSqlInstaller.InsertVersionTable(connection, transaction, ConfigurationData.DataAccessLayerVersionNames.Worklist, 1, 2);
+         VersionSqlInstaller.InsertVersionTable(connection, transaction, ConfigurationData.DataAccessLayerVersionNames.HL7, 1, 2);
       }
 
       private static void FillWorklistTables(SqlConnection connection, SqlTransaction transaction)
@@ -343,111 +344,201 @@ namespace MedicalWorkstationConfigurationDemo
       (
          'IVUS'
       )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'OP'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'SMR'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'AR'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'KER'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'VA'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'SRF'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'OCT'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'LEN'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'OPV'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'OPM'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'OAM'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'RESP'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'KO'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'SEG'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'REG'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'OPT'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'BDUS'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'BMD'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'DOC'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'FID'
-      )
-      INSERT INTO ModalityList
-      VALUES
-      (
-         'OPR'
-      )
+
+
+
+
+
+
+
+
+
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'AR'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'ASMT'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'BDUS'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'BMD'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'CTPROTOCOL'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'DOC'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'FID'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'IOL'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'IVOCT'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'KER'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'KO'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'LEN'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'M3D'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'OAM'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'OCT'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'OP'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'OPM'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'OPR'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'OPT'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'OPTBSV'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'OPTENF'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'OPV'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'OSS'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'PLAN'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'REG'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'RESP'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'RTINTENT'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'RTRAD'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'RTSEGANN'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'RWV'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'SEG'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'SMR'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'SRF'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'STAIN'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'TEXTUREMAP'
+       )
+       INSERT INTO ModalityList
+       VALUES
+       (
+	       'VA'
+       )
+
+
+
+
+
+
       INSERT INTO ModalityList
       VALUES
       (
@@ -1268,7 +1359,23 @@ namespace MedicalWorkstationConfigurationDemo
                               ON DELETE CASCADE
                               
                               ALTER TABLE [dbo].[ReferencedNonImageCompositeSequence] CHECK CONSTRAINT [FK_ReferencedNonImageCompositeSequence_Series_MPPSSop]
-      ";
+      " + 
+            
+#if (LEADTOOLS_V20_OR_LATER)
+@"
+
+CREATE TABLE [dbo].[HL7WorklistMessageQueue](
+ [QueueID] [int] IDENTITY(1,1) NOT NULL,
+ [HL7Message] text NOT NULL, -- a simple name for each item
+ [ProcessedFlag] bit NOT NULL, -- 0: Ready for processing, 1: Processed
+ CONSTRAINT [PK_HL7_Worklist_Message_Queue] PRIMARY KEY CLUSTERED 
+(
+ [QueueID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) " +
+
+#endif // #if (LEADTOOLS_V20_OR_LATER)
+ @"";
                                           
          
       }

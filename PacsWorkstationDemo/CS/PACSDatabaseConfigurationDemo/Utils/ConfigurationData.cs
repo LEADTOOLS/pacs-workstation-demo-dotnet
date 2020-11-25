@@ -1,5 +1,5 @@
 ﻿// *************************************************************
-// Copyright (c) 1991-2019 LEAD Technologies, Inc.              
+// Copyright (c) 1991-2020 LEAD Technologies, Inc.              
 // All Rights Reserved.                                         
 // *************************************************************
 using System;
@@ -12,6 +12,7 @@ using System.Threading;
 using System.Drawing;
 using System.IO;
 using System.Text.RegularExpressions;
+using Leadtools.Demos;
 
 namespace MedicalWorkstationConfigurationDemo
 {
@@ -475,6 +476,18 @@ namespace MedicalWorkstationConfigurationDemo
             public const string PatientUpdater = "LeadStorageServer20";
             public const string MedicalWorkstation = "MedicalWorkstation20";
 #endif
+#if LTV21_CONFIG
+            public const string Logging     = "LeadDicomLogging21" ;
+            public const string Storage     = "LeadDicomStorage21" ;
+            public const string Worklist    = "LeadWorklist21" ;
+            public const string Media       = "LeadMediaCreation21" ;
+            public const string Workstation = "LeadWorkstation21" ;
+            public const string User        = "LeadUserAccess21" ;
+            public const string StorageServer = "LeadStorageServer21";
+            public const string StorageServerOptions = "LeadStorageServerOptions21";
+            public const string PatientUpdater = "LeadStorageServer21";
+            public const string MedicalWorkstation = "MedicalWorkstation21";
+#endif
          }
       }
       
@@ -498,7 +511,8 @@ namespace MedicalWorkstationConfigurationDemo
             public const string JobsDownload          = "JobsDownload";
             public const string PatientAccess         = "PatientAccess";
             public const string ExportLayout          = "ExportLayout";
-         }
+            public const string HL7                   = "HL7";
+      }
    }
    
       public class ConnectionProviders
@@ -621,6 +635,14 @@ namespace MedicalWorkstationConfigurationDemo
          }
 
          return result;
+      }
+
+      public static string MySubstring(this string s, int length)
+      {
+         if (s == null)
+            return string.Empty;
+
+         return s.Substring(length).Trim();
       }
    }
 }

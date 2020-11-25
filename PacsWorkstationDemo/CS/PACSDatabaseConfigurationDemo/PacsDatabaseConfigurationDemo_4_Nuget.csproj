@@ -19,7 +19,7 @@
     <StartupObject>
     </StartupObject>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <ApplicationIcon>Resources\MedAddon.ico</ApplicationIcon>
+    <ApplicationIcon>Med.ico</ApplicationIcon>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -46,7 +46,7 @@
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
-    <DefineConstants>TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;LTV21_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER;LEADTOOLS_V21_OR_LATER</DefineConstants>
     <DocumentationFile>
     </DocumentationFile>
     <DebugSymbols>true</DebugSymbols>
@@ -72,7 +72,7 @@
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
-    <DefineConstants>TRACE;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DefineConstants>TRACE;LTV21_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER;LEADTOOLS_V21_OR_LATER</DefineConstants>
     <DocumentationFile>
     </DocumentationFile>
     <DebugSymbols>false</DebugSymbols>
@@ -97,7 +97,7 @@
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
-    <DefineConstants>TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;LTV21_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER;LEADTOOLS_V21_OR_LATER</DefineConstants>
     <DocumentationFile>
     </DocumentationFile>
     <DebugSymbols>true</DebugSymbols>
@@ -122,7 +122,7 @@
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
-    <DefineConstants>TRACE;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DefineConstants>TRACE;LTV21_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER;LEADTOOLS_V21_OR_LATER</DefineConstants>
     <DocumentationFile>
     </DocumentationFile>
     <DebugSymbols>false</DebugSymbols>
@@ -146,7 +146,7 @@
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
-    <DefineConstants>TRACE;DEBUG;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;LTV21_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER;LEADTOOLS_V21_OR_LATER</DefineConstants>
     <DocumentationFile>
     </DocumentationFile>
     <DebugSymbols>true</DebugSymbols>
@@ -171,7 +171,7 @@
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
-    <DefineConstants>TRACE;LTV20_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <DefineConstants>TRACE;LTV21_CONFIG;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;FOR_WIN64;LEADTOOLS_V20_OR_LATER;LEADTOOLS_V21_OR_LATER</DefineConstants>
     <DocumentationFile>
     </DocumentationFile>
     <DebugSymbols>false</DebugSymbols>
@@ -263,7 +263,8 @@
     <Reference Include="System.Xaml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CS\Sql\SqlUtilities.cs">
+    <Compile Include="..\..\Common\Sql\SqlUtilities.cs">
+      <Link>Common\SqlUtilities.cs</Link>
     </Compile>
     <Compile Include="..\..\Common\UnlockSupport.cs">
       <Link>Common\UnlockSupport.cs</Link>
@@ -345,7 +346,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Program_leadtools.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CS\AssemblyVersion.cs">
+    <Compile Include="..\..\Common\AssemblyVersion.cs">
+      <Link>Properties\AssemblyVersion.cs</Link>
     </Compile>
     <Compile Include="UI\ConnectionConfiguration.cs">
       <SubType>UserControl</SubType>
@@ -474,93 +476,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EmbeddedResource Include="Resources\mg1.dcm" />
-    <EmbeddedResource Include="Resources\mg2.dcm" />
-    <EmbeddedResource Include="Resources\mg3.dcm" />
-    <EmbeddedResource Include="Resources\mg4.dcm" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\InvalidKey.ico">
+    <EmbeddedResource Include="..\..\Resources\InvalidKey.ico">
       <Link>Resources\InvalidKey.ico</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Start.ico">
+    <EmbeddedResource Include="..\..\Resources\Start.ico">
       <Link>Resources\Start.ico</Link>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\FMX18\de01.dcm" />
-    <EmbeddedResource Include="Resources\FMX18\de02.dcm" />
-    <EmbeddedResource Include="Resources\FMX18\de03.dcm" />
-    <EmbeddedResource Include="Resources\FMX18\de04.dcm" />
-    <EmbeddedResource Include="Resources\FMX18\de05.dcm" />
-    <EmbeddedResource Include="Resources\FMX18\de06.dcm" />
-    <EmbeddedResource Include="Resources\FMX18\de07.dcm" />
-    <EmbeddedResource Include="Resources\FMX18\de08.dcm" />
-    <EmbeddedResource Include="Resources\FMX18\de09.dcm" />
-    <EmbeddedResource Include="Resources\FMX18\de10.dcm" />
-    <EmbeddedResource Include="Resources\FMX18\de11.dcm" />
-    <EmbeddedResource Include="Resources\FMX18\de12.dcm" />
-    <EmbeddedResource Include="Resources\FMX18\de13.dcm" />
-    <EmbeddedResource Include="Resources\FMX18\de14.dcm" />
-    <EmbeddedResource Include="Resources\FMX18\de15.dcm" />
-    <EmbeddedResource Include="Resources\FMX18\de16.dcm" />
-    <EmbeddedResource Include="Resources\FMX18\de17.dcm" />
-    <EmbeddedResource Include="Resources\FMX18\de18.dcm" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\MRI\mri_01.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_02.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_03.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_04.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_05.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_06.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_07.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_08.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_09.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_10.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_11.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_12.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_13.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_14.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_15.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_16.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_17.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_18.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_19.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_20.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_21.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_22.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_23.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_24.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_25.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_26.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_27.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_28.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_29.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_30.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_31.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_32.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_33.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_34.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_35.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_36.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_37.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_38.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_39.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_40.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_41.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_42.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_43.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_44.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_45.dcm" />
-    <EmbeddedResource Include="Resources\MRI\mri_46.dcm" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\1.dcm" />
-    <EmbeddedResource Include="Resources\2.dcm" />
     <EmbeddedResource Include="Resources\warning.png" />
-    <EmbeddedResource Include="Resources\cr1.dcm" />
-    <EmbeddedResource Include="Resources\cr2.dcm" />
     <None Include="LEADTOOLS\OcrLEADRuntime\BusinessCard.Names.en.dic" />
     <None Include="LEADTOOLS\OcrLEADRuntime\BusinessCard.Titles.en.dic" />
     <None Include="LEADTOOLS\OcrLEADRuntime\LEAD.Cmc7.bin" />
@@ -606,6 +532,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LEADTOOLS\OcrLEADRuntime\US_Cities.txt" />
+    <Content Include="Med.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
@@ -615,35 +542,39 @@
     if not exist "$(TargetDir)amd64" md "$(TargetDir)amd64"
     xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\amd64\*.*" "$(TargetDir)amd64"</PostBuildEvent>
   </PropertyGroup>
-  <Import Project="..\..\packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets" Condition="Exists('..\..\packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets')" />
+  <Import Project="..\..\packages\Leadtools.Kernel.21.0.0.2\build\net40\Leadtools.Kernel.targets" Condition="Exists('..\..\packages\Leadtools.Kernel.21.0.0.2\build\net40\Leadtools.Kernel.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Kernel.20.0.0.6\build\net40\Leadtools.Kernel.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Leadtools.Dicom.Pacs.Scp.20.0.0.6\build\net40\Leadtools.Dicom.Pacs.Scp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Dicom.Pacs.Scp.20.0.0.6\build\net40\Leadtools.Dicom.Pacs.Scp.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Leadtools.MedicalCollection.Workstation.20.0.0.6\build\net40\Leadtools.MedicalCollection.Workstation.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.MedicalCollection.Workstation.20.0.0.6\build\net40\Leadtools.MedicalCollection.Workstation.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Leadtools.Pacs.DataAccessLayers.20.0.0.6\build\net40\Leadtools.Pacs.DataAccessLayers.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Pacs.DataAccessLayers.20.0.0.6\build\net40\Leadtools.Pacs.DataAccessLayers.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Leadtools.Medical.WinForms.20.0.0.6\build\net40\Leadtools.Medical.WinForms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Medical.WinForms.20.0.0.6\build\net40\Leadtools.Medical.WinForms.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Leadtools.Pacs.EndUser.Addins.20.0.0.6\build\net40\Leadtools.Pacs.EndUser.Addins.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Pacs.EndUser.Addins.20.0.0.6\build\net40\Leadtools.Pacs.EndUser.Addins.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Kernel.21.0.0.2\build\net40\Leadtools.Kernel.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Kernel.21.0.0.2\build\net40\Leadtools.Kernel.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Formats.Raster.Common.21.0.0.2\build\net40\Leadtools.Formats.Raster.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Formats.Raster.Common.21.0.0.2\build\net40\Leadtools.Formats.Raster.Common.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Image.Processing.21.0.0.2\build\net40\Leadtools.Image.Processing.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Image.Processing.21.0.0.2\build\net40\Leadtools.Image.Processing.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Dicom.21.0.0.2\build\net40\Leadtools.Dicom.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Dicom.21.0.0.2\build\net40\Leadtools.Dicom.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Ocr.Languages.Main.NET.21.0.0.2\build\net40\Leadtools.Ocr.Languages.Main.NET.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Ocr.Languages.Main.NET.21.0.0.2\build\net40\Leadtools.Ocr.Languages.Main.NET.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Ocr.21.0.0.2\build\net40\Leadtools.Ocr.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Ocr.21.0.0.2\build\net40\Leadtools.Ocr.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Dicom.Pacs.Scp.21.0.0.2\build\net40\Leadtools.Dicom.Pacs.Scp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Dicom.Pacs.Scp.21.0.0.2\build\net40\Leadtools.Dicom.Pacs.Scp.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.MedicalCollection.Workstation.21.0.0.2\build\net40\Leadtools.MedicalCollection.Workstation.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.MedicalCollection.Workstation.21.0.0.2\build\net40\Leadtools.MedicalCollection.Workstation.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Pacs.DataAccessLayers.21.0.0.2\build\net40\Leadtools.Pacs.DataAccessLayers.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Pacs.DataAccessLayers.21.0.0.2\build\net40\Leadtools.Pacs.DataAccessLayers.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Medical.WinForms.21.0.0.2\build\net40\Leadtools.Medical.WinForms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Medical.WinForms.21.0.0.2\build\net40\Leadtools.Medical.WinForms.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Pacs.EndUser.Addins.21.0.0.2\build\net40\Leadtools.Pacs.EndUser.Addins.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Pacs.EndUser.Addins.21.0.0.2\build\net40\Leadtools.Pacs.EndUser.Addins.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Formats.Raster.Additional.21.0.0.2\build\net40\Leadtools.Formats.Raster.Additional.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Formats.Raster.Additional.21.0.0.2\build\net40\Leadtools.Formats.Raster.Additional.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.HL7.Messaging.21.0.0.2\build\net40\Leadtools.HL7.Messaging.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.HL7.Messaging.21.0.0.2\build\net40\Leadtools.HL7.Messaging.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Dicom.Pacs.Scu.21.0.0.2\build\net40\Leadtools.Dicom.Pacs.Scu.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Dicom.Pacs.Scu.21.0.0.2\build\net40\Leadtools.Dicom.Pacs.Scu.targets'))" />
   </Target>
-  <Import Project="..\..\packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets" Condition="Exists('..\..\packages\Leadtools.Formats.Raster.Common.20.0.0.6\build\net40\Leadtools.Formats.Raster.Common.targets')" />
-  <Import Project="..\..\packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets" Condition="Exists('..\..\packages\Leadtools.Image.Processing.20.0.0.6\build\net40\Leadtools.Image.Processing.targets')" />
-  <Import Project="..\..\packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets" Condition="Exists('..\..\packages\Leadtools.Dicom.20.0.0.6\build\net40\Leadtools.Dicom.targets')" />
-  <Import Project="..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets" Condition="Exists('..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.6\build\net40\Leadtools.Ocr.Languages.Main.NET.targets')" />
-  <Import Project="..\..\packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets" Condition="Exists('..\..\packages\Leadtools.Ocr.20.0.0.6\build\net40\Leadtools.Ocr.targets')" />
-  <Import Project="..\..\packages\Leadtools.Dicom.Pacs.Scp.20.0.0.6\build\net40\Leadtools.Dicom.Pacs.Scp.targets" Condition="Exists('..\..\packages\Leadtools.Dicom.Pacs.Scp.20.0.0.6\build\net40\Leadtools.Dicom.Pacs.Scp.targets')" />
-  <Import Project="..\..\packages\Leadtools.MedicalCollection.Workstation.20.0.0.6\build\net40\Leadtools.MedicalCollection.Workstation.targets" Condition="Exists('..\..\packages\Leadtools.MedicalCollection.Workstation.20.0.0.6\build\net40\Leadtools.MedicalCollection.Workstation.targets')" />
-  <Import Project="..\..\packages\Leadtools.Pacs.DataAccessLayers.20.0.0.6\build\net40\Leadtools.Pacs.DataAccessLayers.targets" Condition="Exists('..\..\packages\Leadtools.Pacs.DataAccessLayers.20.0.0.6\build\net40\Leadtools.Pacs.DataAccessLayers.targets')" />
-  <Import Project="..\..\packages\Leadtools.Medical.WinForms.20.0.0.6\build\net40\Leadtools.Medical.WinForms.targets" Condition="Exists('..\..\packages\Leadtools.Medical.WinForms.20.0.0.6\build\net40\Leadtools.Medical.WinForms.targets')" />
-  <Import Project="..\..\packages\Leadtools.Pacs.EndUser.Addins.20.0.0.6\build\net40\Leadtools.Pacs.EndUser.Addins.targets" Condition="Exists('..\..\packages\Leadtools.Pacs.EndUser.Addins.20.0.0.6\build\net40\Leadtools.Pacs.EndUser.Addins.targets')" />
-  <Import Project="..\..\packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets" Condition="Exists('..\..\packages\Leadtools.Formats.Raster.Additional.20.0.0.6\build\net40\Leadtools.Formats.Raster.Additional.targets')" />
+  <Import Project="..\..\packages\Leadtools.Formats.Raster.Common.21.0.0.2\build\net40\Leadtools.Formats.Raster.Common.targets" Condition="Exists('..\..\packages\Leadtools.Formats.Raster.Common.21.0.0.2\build\net40\Leadtools.Formats.Raster.Common.targets')" />
+  <Import Project="..\..\packages\Leadtools.Image.Processing.21.0.0.2\build\net40\Leadtools.Image.Processing.targets" Condition="Exists('..\..\packages\Leadtools.Image.Processing.21.0.0.2\build\net40\Leadtools.Image.Processing.targets')" />
+  <Import Project="..\..\packages\Leadtools.Dicom.21.0.0.2\build\net40\Leadtools.Dicom.targets" Condition="Exists('..\..\packages\Leadtools.Dicom.21.0.0.2\build\net40\Leadtools.Dicom.targets')" />
+  <Import Project="..\..\packages\Leadtools.Ocr.Languages.Main.NET.21.0.0.2\build\net40\Leadtools.Ocr.Languages.Main.NET.targets" Condition="Exists('..\..\packages\Leadtools.Ocr.Languages.Main.NET.21.0.0.2\build\net40\Leadtools.Ocr.Languages.Main.NET.targets')" />
+  <Import Project="..\..\packages\Leadtools.Ocr.21.0.0.2\build\net40\Leadtools.Ocr.targets" Condition="Exists('..\..\packages\Leadtools.Ocr.21.0.0.2\build\net40\Leadtools.Ocr.targets')" />
+  <Import Project="..\..\packages\Leadtools.Dicom.Pacs.Scp.21.0.0.2\build\net40\Leadtools.Dicom.Pacs.Scp.targets" Condition="Exists('..\..\packages\Leadtools.Dicom.Pacs.Scp.21.0.0.2\build\net40\Leadtools.Dicom.Pacs.Scp.targets')" />
+  <Import Project="..\..\packages\Leadtools.MedicalCollection.Workstation.21.0.0.2\build\net40\Leadtools.MedicalCollection.Workstation.targets" Condition="Exists('..\..\packages\Leadtools.MedicalCollection.Workstation.21.0.0.2\build\net40\Leadtools.MedicalCollection.Workstation.targets')" />
+  <Import Project="..\..\packages\Leadtools.Pacs.DataAccessLayers.21.0.0.2\build\net40\Leadtools.Pacs.DataAccessLayers.targets" Condition="Exists('..\..\packages\Leadtools.Pacs.DataAccessLayers.21.0.0.2\build\net40\Leadtools.Pacs.DataAccessLayers.targets')" />
+  <Import Project="..\..\packages\Leadtools.Medical.WinForms.21.0.0.2\build\net40\Leadtools.Medical.WinForms.targets" Condition="Exists('..\..\packages\Leadtools.Medical.WinForms.21.0.0.2\build\net40\Leadtools.Medical.WinForms.targets')" />
+  <Import Project="..\..\packages\Leadtools.Pacs.EndUser.Addins.21.0.0.2\build\net40\Leadtools.Pacs.EndUser.Addins.targets" Condition="Exists('..\..\packages\Leadtools.Pacs.EndUser.Addins.21.0.0.2\build\net40\Leadtools.Pacs.EndUser.Addins.targets')" />
+  <Import Project="..\..\packages\Leadtools.Formats.Raster.Additional.21.0.0.2\build\net40\Leadtools.Formats.Raster.Additional.targets" Condition="Exists('..\..\packages\Leadtools.Formats.Raster.Additional.21.0.0.2\build\net40\Leadtools.Formats.Raster.Additional.targets')" />
+  <Import Project="..\..\packages\Leadtools.HL7.Messaging.21.0.0.2\build\net40\Leadtools.HL7.Messaging.targets" Condition="Exists('..\..\packages\Leadtools.HL7.Messaging.21.0.0.2\build\net40\Leadtools.HL7.Messaging.targets')" />
+  <Import Project="..\..\packages\Leadtools.Dicom.Pacs.Scu.21.0.0.2\build\net40\Leadtools.Dicom.Pacs.Scu.targets" Condition="Exists('..\..\packages\Leadtools.Dicom.Pacs.Scu.21.0.0.2\build\net40\Leadtools.Dicom.Pacs.Scu.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

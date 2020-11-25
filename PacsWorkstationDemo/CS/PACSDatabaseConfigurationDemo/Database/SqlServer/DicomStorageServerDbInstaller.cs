@@ -1,5 +1,5 @@
 ﻿// *************************************************************
-// Copyright (c) 1991-2019 LEAD Technologies, Inc.              
+// Copyright (c) 1991-2020 LEAD Technologies, Inc.              
 // All Rights Reserved.                                         
 // *************************************************************
 using System;
@@ -119,6 +119,7 @@ namespace MedicalWorkstationConfigurationDemo
                VersionSqlInstaller.InsertVersionTable(connection, transaction, ConfigurationData.DataAccessLayerVersionNames.JobsDownload, 1, 1);
                VersionSqlInstaller.InsertVersionTable(connection, transaction, ConfigurationData.DataAccessLayerVersionNames.PatientAccess, 1, 0);
                VersionSqlInstaller.InsertVersionTable(connection, transaction, ConfigurationData.DataAccessLayerVersionNames.ExportLayout, 1, 1);
+               VersionSqlInstaller.InsertVersionTable(connection, transaction, ConfigurationData.DataAccessLayerVersionNames.HL7, 1, 2);
 
 
                command.Dispose ( ) ;
@@ -533,6 +534,27 @@ CREATE TABLE [dbo].[ExportLayout](
 	[SOPInstanceUID] ASC
    )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
    ) ON [PRIMARY]
+
+CREATE TABLE [dbo].[HL7MessageQueue](
+ [QueueID] [int] IDENTITY(1,1) NOT NULL,
+ [HL7Message] text NOT NULL, -- a simple name for each item
+ [ProcessedFlag] bit NOT NULL, -- 0: Ready for processing, 1: Processed
+ CONSTRAINT [PK_work_queue] PRIMARY KEY CLUSTERED 
+(
+ [QueueID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+)
+
+CREATE TABLE [dbo].[HL7WorklistMessageQueue](
+ [QueueID] [int] IDENTITY(1,1) NOT NULL,
+ [HL7Message] text NOT NULL, -- a simple name for each item
+ [ProcessedFlag] bit NOT NULL, -- 0: Ready for processing, 1: Processed
+ CONSTRAINT [PK_HL7_Worklist_Message_Queue] PRIMARY KEY CLUSTERED 
+(
+ [QueueID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+)
+
 " +
 #endif // #if (LEADTOOLS_V20_OR_LATER)
 

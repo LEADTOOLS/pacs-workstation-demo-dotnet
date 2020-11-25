@@ -1,5 +1,5 @@
 ﻿// *************************************************************
-// Copyright (c) 1991-2019 LEAD Technologies, Inc.              
+// Copyright (c) 1991-2020 LEAD Technologies, Inc.              
 // All Rights Reserved.                                         
 // *************************************************************
 using System;
@@ -511,12 +511,10 @@ namespace PACSConfigDemo
       {
          return new string [ ] { 
             "CSMedicalWorkstationMainDemo_Original.exe", 
-            "CSMedicalWorkstationMainDemo.exe", 
-            //"CSMedicalWorkstationSkinnedUIControls.exe",
-
+            "CSMedicalWorkstationMainDemo.exe",
+#if (!LEADTOOLS_V21_OR_LATER)
             "VBMedicalWorkstationMainDemo.exe", 
-            //"VBMedicalWorkstationSkinnedUIControls.exe",
-         
+#endif
          };
       }
 
@@ -702,11 +700,12 @@ namespace PACSConfigDemo
          clients = new string[] { 
             "CSDicomHighLevelMWLScuDemo.exe",
             "CSDicomHighLevelMWLScuDemo_Original.exe",
-            "VBDicomHighLevelMWLScuDemo.exe",
-            
             "CSPrintToPACSDemo.exe",
             "CSPrintToPACSDemo_Original.exe",
+#if (!LEADTOOLS_V21_OR_LATER)
+            "VBDicomHighLevelMWLScuDemo.exe",
             "VBPrintToPACSDemo.exe",
+#endif
          };
          return clients;
       }
@@ -717,12 +716,12 @@ namespace PACSConfigDemo
          clients = new string[] { 
             "CSDicomHighlevelClientDemo.exe", 
             "CSDicomHighlevelClientDemo_Original.exe",
-
-            "VBDicomHighlevelClientDemo.exe", 
-            
             "CSStorageServerManagerDemo_Original.exe",
             "CSStorageServerManagerDemo.exe",
+#if (!LEADTOOLS_V21_OR_LATER)
+            "VBDicomHighlevelClientDemo.exe", 
             "VBStorageServerManagerDemo.exe",
+#endif
          };
          return clients;
       }
@@ -733,15 +732,14 @@ namespace PACSConfigDemo
          clients = new string[] {
             "CSDicomHighlevelStoreDemo.exe", 
             "CSDicomHighlevelStoreDemo_Original.exe",
-            
             "CSDicomHighlevelPatientUpdaterDemo.exe",
             "CSDicomHighlevelPatientUpdaterDemo_Original.exe",
-
-            "VBDicomHighlevelStoreDemo.exe",
-            "VBDicomHighlevelPatientUpdaterDemo.exe",
-
             "WebViewerConfiguration.exe",
             "WebViewerConfiguration_Original.exe",
+#if (!LEADTOOLS_V21_OR_LATER)
+            "VBDicomHighlevelStoreDemo.exe",
+            "VBDicomHighlevelPatientUpdaterDemo.exe",
+#endif
          };
          return clients;
       }
@@ -751,7 +749,9 @@ namespace PACSConfigDemo
          string[] otherDemos = new string[] { 
             "CSLeadtools.Dicom.Server.Manager_Original.exe",
             "CSLeadtools.Dicom.Server.Manager.exe",
+#if (!LEADTOOLS_V21_OR_LATER)
             "VBLeadtools.Dicom.Server.Manager.exe"
+#endif
          };
          return otherDemos;
       }
@@ -1548,6 +1548,11 @@ namespace PACSConfigDemo
 
          // ExportLayout Addin
          AddOneAddin(addinsLists, Path.Combine(addinsDir, "Leadtools.Medical.ExportLayout.AddIn.dll"));
+
+         // DicomImport Addin
+         string dicomImportFirstLocation = Path.Combine(addinsDir,"Leadtools.Medical.DicomImport.Addin.dll");
+         string dicomImportSecondLocation = Path.Combine(Program._baseDir, "Leadtools.Medical.DicomImport.Addin.dll");
+         AddOneAddin(addinsLists, new string[] {dicomImportFirstLocation, dicomImportSecondLocation});
 #endif
 
 

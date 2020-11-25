@@ -1,5 +1,5 @@
 ﻿// *************************************************************
-// Copyright (c) 1991-2019 LEAD Technologies, Inc.              
+// Copyright (c) 1991-2020 LEAD Technologies, Inc.              
 // All Rights Reserved.                                         
 // *************************************************************
 using System;
@@ -700,7 +700,9 @@ namespace Leadtools.Demos.Workstation.Configuration
             MyAppSettingsReader configReader;
 
 
-#if LTV20_CONFIG
+#if LTV21_CONFIG
+            ConfigFile = Path.Combine(GetCommonDocumentsFolder(), "ViewerCommon_21.config");
+#elif LTV20_CONFIG
             ConfigFile = Path.Combine(GetCommonDocumentsFolder(), "ViewerCommon_20.config");
 #elif LTV19_CONFIG
                   ConfigFile = Path.Combine(GetCommonDocumentsFolder(),"ViewerCommon_19.config");
@@ -1416,9 +1418,9 @@ namespace Leadtools.Demos.Workstation.Configuration
          return validAddress;
       }
 
-      #endregion
+#endregion
 
-      #region Properties
+#region Properties
 
       private static int __ActivePacsIndex
       {
@@ -1426,9 +1428,9 @@ namespace Leadtools.Demos.Workstation.Configuration
          set;
       }
 
-      #endregion
+#endregion
 
-      #region Events
+#region Events
 
       private static void PacsConfiguration_ListChanged
       (
@@ -1458,9 +1460,9 @@ namespace Leadtools.Demos.Workstation.Configuration
          }
       }
 
-      #endregion
+#endregion
 
-      #region Data Members
+#region Data Members
 
       private static IList<ScpInfo> _pacs;
       private static ScuInfo _workstationClient;
@@ -1492,9 +1494,9 @@ namespace Leadtools.Demos.Workstation.Configuration
       private static AnnUnit _measurementUnit;
       private static bool _showStudyTimeline = false;
 
-      #endregion
+#endregion
 
-      #region Data Types Definition
+#region Data Types Definition
 
       private abstract class Constants
       {
@@ -1562,13 +1564,13 @@ namespace Leadtools.Demos.Workstation.Configuration
          public const string DatabaseConfigAltEXEName = "CSPacsDatabaseConfigurationDemo.exe";
       }
 
-      #endregion
+#endregion
 
-      #endregion
+#endregion
 
-      #region internal
+#region internal
 
-      #region Methods
+#region Methods
 
       internal static T MyParseEnum<T>(string value)
       {
@@ -1815,25 +1817,25 @@ namespace Leadtools.Demos.Workstation.Configuration
          }
       }
 
-      #endregion
+#endregion
 
-      #region Properties
+#region Properties
 
-      #endregion
+#endregion
 
-      #region Events
+#region Events
 
-      #endregion
+#endregion
 
-      #region Data Types Definition
+#region Data Types Definition
 
-      #endregion
+#endregion
 
-      #region Callbacks
+#region Callbacks
 
-      #endregion
+#endregion
 
-      #endregion
+#endregion
    }
 
    [Serializable]

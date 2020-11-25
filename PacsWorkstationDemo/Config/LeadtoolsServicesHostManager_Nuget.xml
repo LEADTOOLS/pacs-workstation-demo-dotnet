@@ -6,13 +6,13 @@
    </settings>
    <groups>
       <group>
-         <name>LEADTOOLS HTML5 Medical Web Viewer Framework (Version 20)</name>
+         <name>LEADTOOLS HTML5 Medical Web Viewer Framework (Version 21)</name>
          <description>HTML 5 Medical Viewer and REST Services with JSON support for viewing DICOM images in any browser.</description>
-         <version>20.0.0.0</version>
+         <version>21.0.0.0</version>
          <items>
-            <item>Leadtools.MedicalViewerService.ASP (Version 20)</item>
-            <item>Leadtools.MedicalViewerService.WCF (Version 20)</item>
-            <item>LEADTOOLS HTML5 Medical Viewer Demo (Version 20)</item>
+            <item>Leadtools.MedicalViewerService.ASP (Version 21)</item>
+            <item>Leadtools.MedicalViewerService.WCF (Version 21)</item>
+            <item>LEADTOOLS HTML5 Medical Viewer Demo (Version 21)</item>
             <!--<item>Leadtools.Medical.WebViewer.IdP</item> -->
          </items>
       </group>
@@ -118,11 +118,11 @@
          </assemblies>
       </item> -->
       <item>
-         <name>Leadtools.MedicalViewerService.ASP (Version 20)</name>
+         <name>Leadtools.MedicalViewerService.ASP (Version 21)</name>
          <type>Service</type>
          <description>REST Services (ASP.Net) with JSON support to be used by the LEADTOOLS HTML 5 Medical Viewer demo.</description>
       <project_dir>MedicalWebViewer\Leadtools.Medical.WebViewer.ASP\Leadtools.Medical.WebViewer</project_dir>
-         <iis_virtual_path>MedicalViewerServiceAsp20</iis_virtual_path>
+         <iis_virtual_path>MedicalViewerServiceAsp21</iis_virtual_path>
       <iis_physical_path>MedicalWebViewer\Leadtools.Medical.WebViewer.ASP\Leadtools.Medical.WebViewer</iis_physical_path>
          <is_iis_application>True</is_iis_application>
          <tests>
@@ -225,11 +225,11 @@
          </assemblies>
       </item>
       <item>
-         <name>Leadtools.MedicalViewerService.WCF (Version 20)</name>
+         <name>Leadtools.MedicalViewerService.WCF (Version 21)</name>
          <type>Service</type>
          <description>REST Services with JSON support to be used by the LEADTOOLS HTML 5 Medical Viewer demo.</description>
          <project_dir>MedicalWebViewer\Leadtools.Medical.WebViewer.WCF</project_dir>
-         <iis_virtual_path>MedicalViewerServiceWcf20</iis_virtual_path>
+         <iis_virtual_path>MedicalViewerServiceWcf21</iis_virtual_path>
          <iis_physical_path>MedicalWebViewer\Leadtools.Medical.WebViewer.WCF</iis_physical_path>
          <is_iis_application>True</is_iis_application>
          <tests>
@@ -316,11 +316,11 @@
 
 
       <item>
-         <name>LEADTOOLS HTML5 Medical Viewer Demo (Version 20)</name>
+         <name>LEADTOOLS HTML5 Medical Viewer Demo (Version 21)</name>
          <type>Demo</type>
          <description>LEADTOOLS HTML5 Medical Viewer for viewing DICOM images on any browser.</description>
          <project_dir>MedicalWebViewer\JS\MedicalWebViewerDemo</project_dir>
-         <iis_virtual_path>MedicalViewer20</iis_virtual_path>
+         <iis_virtual_path>MedicalViewer21</iis_virtual_path>
          <iis_physical_path>MedicalWebViewer\JS\MedicalWebViewerDemo</iis_physical_path>
          <is_iis_application>True</is_iis_application>
          <tests>

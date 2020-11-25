@@ -1,5 +1,5 @@
 ﻿// *************************************************************
-// Copyright (c) 1991-2019 LEAD Technologies, Inc.              
+// Copyright (c) 1991-2020 LEAD Technologies, Inc.              
 // All Rights Reserved.                                         
 // *************************************************************
 using System;
@@ -45,6 +45,10 @@ using Leadtools.Medical.ExportLayout.DataAccessLayer.Configuration;
 #if (LEADTOOLS_V19_OR_LATER_MEDICAL_EXTERNAL_STORE) || (LEADTOOLS_V19_OR_LATER)
 using Leadtools.Medical.ExternalStore.DataAccessLayer.Configuration;
 #endif
+
+#if (LEADTOOLS_V20_OR_LATER)
+using Leadtools.Medical.HL7.DataAccessLayer.Configuration;
+#endif 
 
 namespace CSPacsDatabaseConfigurationDemo.UI
 {
@@ -225,11 +229,22 @@ namespace CSPacsDatabaseConfigurationDemo.UI
 
          this.addDefaultImagesToolStripMenuItem.Click += AddDefaultImagesToolStripMenuItem_Click;
          this.addDefaultImagesToolStripMenuItem.Checked = true;
+
+         this.checkBoxAddDefaultImages.Click += CheckBoxAddDefaultImages_Click;
+         this.checkBoxAddDefaultImages.Checked = true;
+      }
+
+      private void CheckBoxAddDefaultImages_Click(object sender, EventArgs e)
+      {
+         addDefaultImagesToolStripMenuItem.Checked = checkBoxAddDefaultImages.Checked;
       }
 
       private void AddDefaultImagesToolStripMenuItem_Click(object sender, EventArgs e)
       {
-         addDefaultImagesToolStripMenuItem.Checked = !addDefaultImagesToolStripMenuItem.Checked;
+         bool newCheckState = !addDefaultImagesToolStripMenuItem.Checked;
+
+         checkBoxAddDefaultImages.Checked =newCheckState;
+         addDefaultImagesToolStripMenuItem.Checked = newCheckState;
       }
 
       private void ListViewStatus_MouseClick(object sender, MouseEventArgs e)
@@ -370,6 +385,12 @@ namespace CSPacsDatabaseConfigurationDemo.UI
 
          MyLogger.ShowMessage("Registering Configuration Sections...");
          RegisterConfigSections(configurationOptions, allDatabases);
+
+         if (dbConfigurationMode == DbConfigurationMode.Configure)
+         {
+            MyLogger.ShowMessage("Adding DICOM Listening Service Name to globalpacs.config...");
+            Program.AddDicomServiceNameToGlobalPacsConfig();
+         }
          MyLogger.ShowFinished();
 
          if (dbConfigurationMode == DbConfigurationMode.Create)
@@ -793,6 +814,7 @@ namespace CSPacsDatabaseConfigurationDemo.UI
 #if (LEADTOOLS_V20_OR_LATER)
                      ConfigurePatientRightsDataAccess(DicomDemoSettingsManager.ProductNameStorageServer, connectionStringName, DefaultConnectionNameType.None);
                      ConfigureExportLayoutDataAccess(DicomDemoSettingsManager.ProductNameStorageServer, connectionStringName, DefaultConnectionNameType.None);
+                     ConfigureHL7DataAccess(DicomDemoSettingsManager.ProductNameStorageServer, connectionStringName, DefaultConnectionNameType.None);
 #endif
                   }
                   break;
@@ -827,6 +849,10 @@ namespace CSPacsDatabaseConfigurationDemo.UI
                case DatabaseComponents.Worklist:
                   {
                      ConfigureWorklist(DicomDemoSettingsManager.ProductNameDemoServer, configOption.ConnectionSettings.Name, DefaultConnectionNameType.None);
+#if (LEADTOOLS_V20_OR_LATER)
+                     ConfigureHL7DataAccess(DicomDemoSettingsManager.ProductNameDemoServer, configOption.ConnectionSettings.Name, DefaultConnectionNameType.None);
+#endif
+
                   }
                   break;
 
@@ -1156,6 +1182,14 @@ namespace CSPacsDatabaseConfigurationDemo.UI
       private void ConfigureExportLayoutDataAccess(string productName, string connectionStringName, DefaultConnectionNameType connectionType)
       {
          ExportLayoutDataAccessConfigurationView accessConfigurationView = new ExportLayoutDataAccessConfigurationView(ConfigGlobalPacs, productName, null);
+
+         accessConfigurationView.Configuration = ConfigGlobalPacs;
+         ConfigureSection(ConfigGlobalPacs, accessConfigurationView, connectionStringName, productName, connectionType);
+      }
+
+      private void ConfigureHL7DataAccess(string productName, string connectionStringName, DefaultConnectionNameType connectionType)
+      {
+         HL7DataAccessConfigurationView accessConfigurationView = new HL7DataAccessConfigurationView(ConfigGlobalPacs, productName, null);
 
          accessConfigurationView.Configuration = ConfigGlobalPacs;
          ConfigureSection(ConfigGlobalPacs, accessConfigurationView, connectionStringName, productName, connectionType);

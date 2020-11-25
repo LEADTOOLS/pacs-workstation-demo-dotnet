@@ -1,5 +1,5 @@
 ﻿// *************************************************************
-// Copyright (c) 1991-2019 LEAD Technologies, Inc.              
+// Copyright (c) 1991-2020 LEAD Technologies, Inc.              
 // All Rights Reserved.                                         
 // *************************************************************
 using System;
@@ -189,7 +189,7 @@ namespace MedicalWorkstationConfigurationDemo.UI
                {
                   if ( IsUncPath ( databaseFileDlg.FileName ) )
                   {
-                     Messager.ShowError ( this, "You can't connect to SQL Server CE database located on remote machine. Use a local machine database or choose another database source option." ) ;
+                     Program.MyShowError ("You can't connect to SQL Server CE database located on remote machine. Use a local machine database or choose another database source option." ) ;
                      
                      return ;
                   }

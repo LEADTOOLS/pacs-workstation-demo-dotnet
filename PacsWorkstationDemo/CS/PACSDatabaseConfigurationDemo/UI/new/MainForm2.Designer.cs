@@ -43,9 +43,10 @@
          this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
          this.clearStatusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.searchAllSQLServersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+         this.addDefaultImagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.panel2 = new System.Windows.Forms.Panel();
          this.mainOptions1 = new CSPacsDatabaseConfigurationDemo.UI.New.MainOptions();
-         this.addDefaultImagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+         this.checkBoxAddDefaultImages = new System.Windows.Forms.CheckBox();
          this.panel3.SuspendLayout();
          this.panel1.SuspendLayout();
          this.contextMenuStrip.SuspendLayout();
@@ -54,6 +55,7 @@
          // 
          // panel3
          // 
+         this.panel3.Controls.Add(this.checkBoxAddDefaultImages);
          this.panel3.Controls.Add(this.buttonClose);
          this.panel3.Controls.Add(this.labelConfigure);
          this.panel3.Controls.Add(this.listViewStatus);
@@ -71,7 +73,7 @@
          this.buttonClose.Location = new System.Drawing.Point(616, 696);
          this.buttonClose.Name = "buttonClose";
          this.buttonClose.Size = new System.Drawing.Size(75, 23);
-         this.buttonClose.TabIndex = 12;
+         this.buttonClose.TabIndex = 4;
          this.buttonClose.Text = "&Close";
          this.buttonClose.UseVisualStyleBackColor = true;
          // 
@@ -83,7 +85,7 @@
          this.labelConfigure.Location = new System.Drawing.Point(99, 701);
          this.labelConfigure.Name = "labelConfigure";
          this.labelConfigure.Size = new System.Drawing.Size(74, 13);
-         this.labelConfigure.TabIndex = 7;
+         this.labelConfigure.TabIndex = 2;
          this.labelConfigure.Text = "labelConfigure";
          // 
          // listViewStatus
@@ -93,12 +95,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
          this.listViewStatus.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1});
+         this.listViewStatus.HideSelection = false;
          this.listViewStatus.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1});
          this.listViewStatus.Location = new System.Drawing.Point(4, 488);
          this.listViewStatus.Name = "listViewStatus";
          this.listViewStatus.Size = new System.Drawing.Size(687, 202);
-         this.listViewStatus.TabIndex = 5;
+         this.listViewStatus.TabIndex = 0;
          this.listViewStatus.UseCompatibleStateImageBehavior = false;
          this.listViewStatus.View = System.Windows.Forms.View.Details;
          // 
@@ -135,7 +138,7 @@
          this.panel1.Location = new System.Drawing.Point(0, 0);
          this.panel1.Name = "panel1";
          this.panel1.Size = new System.Drawing.Size(694, 60);
-         this.panel1.TabIndex = 5;
+         this.panel1.TabIndex = 0;
          // 
          // HeaderDescriptionLabel
          // 
@@ -144,7 +147,7 @@
          this.HeaderDescriptionLabel.Location = new System.Drawing.Point(12, 9);
          this.HeaderDescriptionLabel.Name = "HeaderDescriptionLabel";
          this.HeaderDescriptionLabel.Size = new System.Drawing.Size(531, 41);
-         this.HeaderDescriptionLabel.TabIndex = 2;
+         this.HeaderDescriptionLabel.TabIndex = 0;
          this.HeaderDescriptionLabel.Text = "This application is used to configure the PACS Framework databases.";
          this.HeaderDescriptionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
          // 
@@ -165,7 +168,7 @@
             this.searchAllSQLServersToolStripMenuItem,
             this.addDefaultImagesToolStripMenuItem});
          this.contextMenuStrip.Name = "contextMenuStrip";
-         this.contextMenuStrip.Size = new System.Drawing.Size(189, 92);
+         this.contextMenuStrip.Size = new System.Drawing.Size(189, 70);
          // 
          // clearStatusToolStripMenuItem
          // 
@@ -181,6 +184,12 @@
          this.searchAllSQLServersToolStripMenuItem.Text = "Search all SQL Servers";
          this.searchAllSQLServersToolStripMenuItem.Click += new System.EventHandler(this.searchAllSQLServersToolStripMenuItem_Click);
          // 
+         // addDefaultImagesToolStripMenuItem
+         // 
+         this.addDefaultImagesToolStripMenuItem.Name = "addDefaultImagesToolStripMenuItem";
+         this.addDefaultImagesToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+         this.addDefaultImagesToolStripMenuItem.Text = "Add Default Images";
+         // 
          // panel2
          // 
          this.panel2.AutoSize = true;
@@ -190,15 +199,6 @@
          this.panel2.Name = "panel2";
          this.panel2.Size = new System.Drawing.Size(694, 423);
          this.panel2.TabIndex = 2;
-
-         // 
-         // addDefaultImagesToolStripMenuItem
-         // 
-         this.addDefaultImagesToolStripMenuItem.Name = "addDefaultImagesToolStripMenuItem";
-         this.addDefaultImagesToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-         this.addDefaultImagesToolStripMenuItem.Text = "Add Default Images";
-         // 
-
          // 
          // mainOptions1
          // 
@@ -214,6 +214,16 @@
          this.mainOptions1.SupportedDatabases = ((MedicalWorkstationConfigurationDemo.DatabaseComponents)(((MedicalWorkstationConfigurationDemo.DatabaseComponents.Worklist | MedicalWorkstationConfigurationDemo.DatabaseComponents.StorageServer) 
             | MedicalWorkstationConfigurationDemo.DatabaseComponents.MedicalWorkstation)));
          this.mainOptions1.TabIndex = 0;
+         // 
+         // checkBoxAddDefaultImages
+         // 
+         this.checkBoxAddDefaultImages.AutoSize = true;
+         this.checkBoxAddDefaultImages.Location = new System.Drawing.Point(341, 700);
+         this.checkBoxAddDefaultImages.Name = "checkBoxAddDefaultImages";
+         this.checkBoxAddDefaultImages.Size = new System.Drawing.Size(119, 17);
+         this.checkBoxAddDefaultImages.TabIndex = 3;
+         this.checkBoxAddDefaultImages.Text = "Add Default Images";
+         this.checkBoxAddDefaultImages.UseVisualStyleBackColor = true;
          // 
          // MainForm2
          // 
@@ -254,5 +264,6 @@
       private New.MainOptions mainOptions1;
       private System.Windows.Forms.Panel panel2;
       private System.Windows.Forms.ToolStripMenuItem addDefaultImagesToolStripMenuItem;
+      private System.Windows.Forms.CheckBox checkBoxAddDefaultImages;
    }
 }

@@ -1,5 +1,5 @@
 ﻿// *************************************************************
-// Copyright (c) 1991-2019 LEAD Technologies, Inc.              
+// Copyright (c) 1991-2020 LEAD Technologies, Inc.              
 // All Rights Reserved.                                         
 // *************************************************************
 using System;
@@ -363,6 +363,7 @@ namespace PACSConfigDemo
 
 #if LEADTOOLS_V175_OR_LATER
          InstallBrokerHost = true;
+         BrokerHostPort = 8800;
 #endif
 
          if (!DicomDemoSettingsManager.Is64Process())
@@ -460,6 +461,23 @@ namespace PACSConfigDemo
             //RoutingServerAE = "L20_ROUTER32";
             //RoutingServerPort = 306;
             BrokerHostPort = 8751;
+#elif LTV21_CONFIG
+            ServerAE = "L21_SERVER32";
+            ServerPort = 354;
+            ClientAE = "L21_CLIENT32";
+            ClientPort = 1050;
+
+            StorageServerAE = "L21_PACS_SCP32";
+            StorageServerPort = 554;
+            
+            WorklistServerAE = "L21_MWL_SCP32";
+            WorklistServerPort = 654;
+
+            WsServerAE = "L21_WS_SERVER32";
+            WsServerPort = 355;
+            WsClientAE = "L21_WS_CLIENT32";
+            WsClientPort = 1051;
+            BrokerHostPort = 8755;
 #endif
             StartServer = true;
             StorageStartServer = true;
@@ -560,6 +578,24 @@ namespace PACSConfigDemo
             // RoutingServerAE = "L20_ROUTER64";
             // RoutingServerPort = 316;
             BrokerHostPort = 8761;
+#elif LTV21_CONFIG
+            ServerAE = "L21_SERVER64";
+            ServerPort = 344;
+            ClientAE = "L21_CLIENT64";
+            ClientPort = 1040;
+
+            StorageServerAE = "L21_PACS_SCP64";
+            StorageServerPort = 544;
+            
+            WorklistServerAE = "L21_MWL_SCP64";
+            WorklistServerPort = 644;
+
+            WsServerAE = "L21_WS_SERVER64";
+            WsServerPort = 345;
+            WsClientAE = "L21_WS_CLIENT64";
+            WsClientPort = 1041;
+
+            BrokerHostPort = 8764;
 #endif
 
             StartServer = true;
@@ -567,10 +603,6 @@ namespace PACSConfigDemo
             WsStartServer = true;
             WorklistStartServer = true;
             // RoutingStartServer = true;
-
-#if LEADTOOLS_V175_OR_LATER
-            BrokerHostPort = 8800;
-#endif
 
          }
       }
